@@ -268,32 +268,45 @@ function App() {
         {activeTab === 'glosario' && <GlosarioTDR />}
       </main>
 
-      {/* Footer Gubernamental */}
-      <footer className="footer-gubernamental">
-        <div className="footer-content">
+      {/* Footer Gubernamental Premium */}
+      <footer className="footer-gubernamental" style={{ backgroundColor: 'var(--color-surface)', borderTop: '1px solid var(--color-border)', padding: '60px 48px 30px 48px', marginTop: '80px' }}>
+        <div className="footer-content" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '48px' }}>
           <div className="footer-section">
-            <h3>Red de Pueblos Patrimonio</h3>
-            <p>Iniciativa nacional para promover la conservación, competitividad y desarrollo económico de las joyas arquitectónicas e históricas de Colombia mediante el turismo sostenible.</p>
+            <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '22px', fontWeight: 900, color: 'var(--color-forest)', marginBottom: '16px' }}>Red de Pueblos Patrimonio</h3>
+            <p style={{ color: 'var(--color-ink)', lineHeight: 1.7, fontSize: '14px' }}>
+              Iniciativa nacional operada por <strong>COTELCO Capítulo Valle del Cauca</strong> bajo el contrato <strong>FNTCE-730-2025</strong>. Buscamos promover la competitividad y el desarrollo económico de nuestras joyas históricas.
+            </p>
           </div>
           <div className="footer-section">
-            <h3>Portales Estatales</h3>
-            <ul className="footer-links">
-              <li><a href="https://www.mincit.gov.co" target="_blank" rel="noopener noreferrer">Ministerio de Comercio, Industria y Turismo</a></li>
-              <li><a href="https://fontur.com.co" target="_blank" rel="noopener noreferrer">Fondo Nacional de Turismo - FONTUR</a></li>
-              <li><a href="https://cotelco.org" target="_blank" rel="noopener noreferrer">COTELCO Nacional</a></li>
+            <h3 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '14px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-forest)', marginBottom: '16px' }}>
+              Enlaces Institucionales
+            </h3>
+            <ul className="footer-links" style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <li><a href="https://www.mincit.gov.co" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-ink)', textDecoration: 'none', fontSize: '14px', fontWeight: 600 }}>Ministerio de Comercio, Industria y Turismo</a></li>
+              <li><a href="https://fontur.com.co" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-ink)', textDecoration: 'none', fontSize: '14px', fontWeight: 600 }}>Fondo Nacional de Turismo - FONTUR</a></li>
+              <li><a href="https://cotelco.org" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-ink)', textDecoration: 'none', fontSize: '14px', fontWeight: 600 }}>COTELCO Nacional</a></li>
             </ul>
           </div>
           <div className="footer-section">
-            <h3>Soporte Técnico</h3>
-            <p>Correo oficial de consultas:<br /><strong>soporte.convocatoria@pueblospatrimonio.co</strong></p>
-            <p style={{ marginTop: '10px' }}>Línea de atención nacional:<br /><strong>01 8000 910 300</strong></p>
+            <h3 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '14px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--color-forest)', marginBottom: '16px' }}>
+              Contacto y Soporte
+            </h3>
+            <p style={{ color: 'var(--color-ink)', fontSize: '14px', lineHeight: 1.6 }}>
+              Para dudas sobre la postulación, escríbenos a:<br />
+              <a href="mailto:idtcultur@gmail.com" style={{ color: 'var(--color-ocean)', fontWeight: 800, textDecoration: 'none', display: 'inline-block', marginTop: '6px', fontSize: '16px' }}>idtcultur@gmail.com</a>
+            </p>
           </div>
         </div>
-        <div className="footer-legal">
-          <p>© {new Date().getFullYear()} Red Turística de Pueblos Patrimonio de Colombia. Todos los derechos reservados.</p>
-          <p>Cumplimiento Ley 2345 de 2023 — Imagen Institucional de Entidades del Estado.</p>
+        
+        <div className="footer-legal" style={{ maxWidth: '1200px', margin: '50px auto 0 auto', borderTop: '1px solid var(--color-border)', paddingTop: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
           <div className="footer-logos-co">
-            <span style={{ fontSize: '13px', fontWeight: 900, color: 'var(--color-terracotta)' }}>COLOMBIA EL PAÍS DE LA BELLEZA</span>
+            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: '20px', fontWeight: 900, color: 'var(--color-terracotta)', letterSpacing: '0.02em' }}>
+              COLOMBIA <span style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 500, fontSize: '15px', letterSpacing: '0.12em', color: 'var(--color-mustard)' }}>el país de la belleza</span>
+            </span>
+          </div>
+          <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--color-ink-light)', lineHeight: 1.6 }}>
+            <p style={{ margin: '0 0 4px 0' }}>© {new Date().getFullYear()} Red Turística de Pueblos Patrimonio. Operado por COTELCO Valle del Cauca.</p>
+            <p style={{ margin: 0 }}>Cumplimiento Ley 2345 de 2023 — Manual de Identidad Visual Entidades del Estado.</p>
           </div>
         </div>
       </footer>
