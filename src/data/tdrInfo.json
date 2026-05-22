@@ -1,0 +1,245 @@
+{
+  "projectInfo": {
+    "title": "Convocatoria para la Caracterización y Dotación: 'Fortalecimiento de la Competitividad, Sostenibilidad y Promoción de la Red Turística de Pueblos Patrimonio de Colombia-FNTP-2025-013'",
+    "contract": "FNTCE-730-2025",
+    "operator": "Asociación Hotelera y Turística de Colombia – COTELCO Capítulo Valle del Cauca",
+    "justificacion": "El presente documento técnico establece los lineamientos para la convocatoria de caracterización, diagnóstico y preselección de hasta 10 experiencias turísticas culturales por cada uno de los dieciocho (18) municipios integrantes de la Red Turística de Pueblos Patrimonio de Colombia (RTPP). Esta iniciativa se enmarca en el Proyecto FNTP-2025-013, aprobado por el Comité Directivo del Fondo Nacional de Turismo – FONTUR, y se ejecuta mediante el Contrato Electrónico FNTCE-730-2025 suscrito con la Asociación Hotelera y Turística de Colombia – COTELCO Capítulo Valle del Cauca.",
+    "objeto": "Fortalecer las capacidades operativas, de gestión y comercialización de los prestadores de servicios turísticos y actores de la cadena de valor del turismo cultural en los dieciocho (18) municipios integrantes de la Red Turística de Pueblos Patrimonio de Colombia (RTPP), mediante diagnóstico, validación en territorio, portafolio digital, dotación y encuentros de fortalecimiento.",
+    "alcanceTerritorial": [
+      "Aguadas (Caldas)",
+      "Barichara (Santander)",
+      "Ciénaga (Magdalena)",
+      "Jardín (Antioquia)",
+      "Socorro (Santander)",
+      "Guadalajara de Buga (Valle del Cauca)",
+      "Honda (Tolima)",
+      "Jericó (Antioquia)",
+      "La Playa de Belén (Norte de Santander)",
+      "Villa de Guaduas (Cundinamarca)",
+      "Monguí (Boyacá)",
+      "Pore (Casanare)",
+      "Salamina (Caldas)",
+      "San Juan Girón (Santander)",
+      "Santa Cruz de Lorica (Córdoba)",
+      "Santa Cruz de Mompox (Bolívar)",
+      "Santa Fe de Antioquia (Antioquia)",
+      "Villa de Leyva (Boyacá)"
+    ]
+  },
+  "experiencesCall": {
+    "targetExperiences": 54,
+    "maxPerMunicipality": 3,
+    "endowmentCapCop": 5000000,
+    "endowmentCapText": "Hasta $5.000.000 COP en activos productivos por experiencia",
+    "totalBudgetCop": 270000000,
+    "nonEligibleExpenses": [
+      "Equipos de cómputo de escritorio o portátiles de gama media/alta.",
+      "Licencias de software, aplicaciones pagas o suscripciones digitales.",
+      "Vehículos automotores, motocicletas, bicicletas eléctricas o cualquier medio de transporte.",
+      "Terrenos, predios, adecuaciones locativas mayores o infraestructura turística (construcciones, baños, senderos pavimentados, etc.).",
+      "Servicios públicos (energía, agua, internet, telefonía).",
+      "Impuestos, tasas, contribuciones parafiscales o obligaciones legales del beneficiario.",
+      "Tiquetes aéreos, terrestres o fluviales en clase ejecutiva o superior.",
+      "Inversiones en otras empresas, compra de acciones o instrumentos financieros.",
+      "Rubros no directamente relacionados con la operación de la experiencia turística cultural priorizada."
+    ],
+    "subTipologias": [
+      "Turismo arqueológico",
+      "Turismo y artesanías",
+      "Turismo Creativo",
+      "Etno turismo",
+      "Turismo Religioso",
+      "Turismo Urbano",
+      "Turismo Histórico",
+      "Turismo Musical",
+      "Turismo gastronómico",
+      "Turismo Literario",
+      "Otros (Actividades en espacios naturales con valor cultural)"
+    ]
+  },
+  "calendario": {
+    "apertura": "01 de junio de 2026",
+    "cierre": "01 de julio de 2026",
+    "subsanacion": "3 días hábiles posteriores a la notificación de subsanación",
+    "publicacion": "16 de julio de 2026"
+  },
+  "criteriosEvaluacion": [
+    {
+      "id": 1,
+      "nombre": "Pertinencia en el sector turismo cultural",
+      "porcentaje": 35,
+      "descripcion": "La experiencia/iniciativa/servicio presenta una propuesta formalmente activa, directamente vinculada con actividades/experiencias de la cadena de valor del sector turismo cultural y/o los servicios turísticos complementarios, y cuenta con experiencia comercial desde su constitución como organización en turismo y/o servicios vinculados al turismo, la iniciativa tiene potencial para la generación de ingresos sostenibles."
+    },
+    {
+      "id": 2,
+      "nombre": "Propuesta de valor en turismo cultural y sostenibilidad",
+      "porcentaje": 25,
+      "descripcion": "La iniciativa presentada tiene potencial creativo e innovador para la generación de una experiencia diferencial y memorable, vinculada al turismo cultural, la iniciativa incorpora prácticas de sostenibilidad."
+    },
+    {
+      "id": 3,
+      "nombre": "Impacto social/comunitario",
+      "porcentaje": 20,
+      "descripcion": "La iniciativa involucra activamente a comunidades locales en el diseño o desarrollo de la experiencia, y/o contribuye a la cohesión social y al fortalecimiento del tejido comunitario. Denota una priorización del beneficio colectivo frente al beneficio individual."
+    },
+    {
+      "id": 4,
+      "nombre": "Impacto cultural y/o patrimonial",
+      "porcentaje": 20,
+      "descripcion": "La iniciativa y/o actividad productiva, reconoce o fortalece la autenticidad y/o arraigo cultural, incluye procesos de transmisión inter-generacional de saberes, la comunidad reconoce la práctica como parte de su comunidad. La iniciativa tiene potencial para aportar a la salvaguarda del patrimonio cultural del territorio."
+    }
+  ],
+  "causalesRechazo": [
+    "No acreditar residencia o domicilio en uno de los 18 municipios de la Red Turística de Pueblos Patrimonio (RTPP).",
+    "No demostrar que la actividad está relacionada con el turismo cultural o sus subtipologías definidas (incluye experiencias gastronómicas, artesanales, de memoria, comunitarias, rutas, talleres, manifestaciones en espacio público, etc.).",
+    "No acreditar antigüedad mínima de dos (2) años en la actividad económica, contados antes de la fecha de apertura de la convocatoria.",
+    "No contar con un punto de operación identificable y verificable donde se desarrolle la actividad (puede ser espacio público, ruta, plaza, sendero, mercado, comunidad, etc.), que permita la entrega y seguimiento de la dotación.",
+    "No acreditar la posibilidad de recibir y custodiar la dotación (autorización del propietario del inmueble si aplica, o compromiso de custodia si la actividad opera en espacio público).",
+    "Presentar documentación incompleta, ilegible, vencida o en formato distinto al solicitado.",
+    "Adjuntar documentos adulterados, falsos o con información inconsistente con bases de datos oficiales.",
+    "No subsanar las inconsistencias documentales notificadas dentro del plazo máximo establecido.",
+    "Estar reportado en listas de Lavado de Activos y Financiación del Terrorismo (LA/FT).",
+    "Ser servidor público del MinCIT, FONTUR, entidades cooperantes o territoriales con relación directa con el objeto de la convocatoria.",
+    "Haber participado directa o indirectamente en la asesoría, preparación o elaboración de los términos de esta convocatoria.",
+    "No alcanzar el puntaje mínimo de priorización establecido por el Comité.",
+    "Solicitar rubros expresamente excluidos (equipos de cómputo, software, vehículos, infraestructura, etc.) y no ajustar el Plan de Inversión tras requerimiento.",
+    "Que un mismo beneficiario (misma cédula o RUT) postule o sea seleccionado para recibir dotación en más de una (1) experiencia turística.",
+    "No asistir o participar en las actividades obligatorias del proceso: jornadas de validación en campo, talleres de fortalecimiento, firma de actas de entrega y compromiso, o encuentros de encadenamiento, sin justificación aceptada por el Comité Técnico de Seguimiento.",
+    "Manifestar por escrito o tácitamente la renuncia a participar después de haber sido seleccionado, antes de la entrega de la dotación."
+  ],
+  "responsabilidades": [
+    "Atender y disponer del tiempo necesario para la realización de las jornadas de capacitación, visitas de campo y levantamiento de la información para el diseño de experiencias.",
+    "Aplicar los conocimientos adquiridos en el diseño de experiencias turísticas y las jornadas de capacitación, rueda de encadenamiento, portafolio.",
+    "Velar por el mantenimiento, preservación y cuidado de los activos productivos entregados para el fortalecimiento de la organización o unidad productiva.",
+    "Cumplir con el desarrollo de las actividades del plan de trabajo.",
+    "Cumplir con el tiempo de permanencia hasta la finalización de la convocatoria.",
+    "No ceder, vender o entregar a un tercero los bienes entregados en el marco de esta convocatoria.",
+    "Disponer de tiempo para el desarrollo de actividades que se ejecutarán con el consultor asignado.",
+    "Garantizar que la iniciativa fortalezca el beneficio colectivo de su comunidad.",
+    "Participar en procesos de articulación y gobernanza turística de la RTPP.",
+    "Contribuir a la sostenibilidad del destino y a la salvaguarda cultural y ambiental del territorio.",
+    "Conceder autorización plena al Ministerio de Comercio, Industria y Turismo, Cotelco-Capítulo Valle del Cauca y Fontur para el uso de las obras, con todos los elementos que las componen (fotografías, material audiovisual, materiales gráficos, textos, publicaciones, etc.) desarrollado en el marco de la presente convocatoria conforme a la normatividad colombiana."
+  ],
+  "glosario": [
+    {
+      "termino": "Actividad y/o experiencia turística",
+      "definicion": "Para el presente proyecto, se denomina el conjunto de actividades que son ofertadas a través de programas, itinerarios o paquetes de viaje que incluyen como mínimo visita a los atractivos turísticos o experiencias basados en vivencias de emociones y sensaciones propias de la cultura local, permitiendo ser memorables al momento del encuentro en el destino turístico. Dentro de las características se resalta la interacción, narrativa y autenticidad del producto ofertado."
+    },
+    {
+      "termino": "Actividades, bienes y servicios culturales",
+      "definicion": "Son los que, desde el punto de vista de su calidad, utilización o finalidad específicas, encarnan o transmiten expresiones culturales, independientemente del valor comercial que puedan tener. Las actividades culturales pueden constituir una finalidad de por sí, o contribuir a la producción de bienes y servicios culturales (Unesco, 1954)."
+    },
+    {
+      "termino": "Activos productivos",
+      "definicion": "Bienes tangibles adquiridos dentro del proyecto para ser entregados a las y los beneficiarios con el propósito de poner en marcha el plan de trabajo diseñado para fortalecer el desarrollo de su actividad económica en la cadena de valor turística con enfoque en turismo cultural."
+    },
+    {
+      "termino": "Actor local organizado",
+      "definicion": "Hace referencia a las asociaciones, corporaciones, fundaciones, red de colectivos comunitarios o comunales, familiares y demás organizaciones conformadas y lideradas por comunidades étnicas, campesinas, etarias, otros grupos sociales y comunitarios organizados y legalmente constituidos."
+    },
+    {
+      "termino": "Agentes culturales",
+      "definicion": "Aquellas personas que desarrollan oficios, labores, actividades o profesiones relacionadas con las artes, el patrimonio, la creatividad y la cultura en general (Min cultura, 2021)."
+    },
+    {
+      "termino": "Asociaciones de Cabildos Indígenas y/o Autoridades Tradicionales Indígenas",
+      "definicion": "Son entidades de Derecho Público de carácter especial, con personería jurídica, patrimonio propio y autonomía administrativa, que tienen por objeto el desarrollo integral de las comunidades indígenas. Se encuentran reguladas bajo el Decreto 1088 de 1993. De acuerdo con el artículo 7 de la Ley 2160 de 2021, las Asociaciones se encargan de fomentar y coordinar con las autoridades locales, regionales y nacionales, la ejecución de proyectos en salud, educación y vivienda. Esta entidad estará conformada por diez (10) organizaciones regionales indígenas."
+    },
+    {
+      "termino": "Atractivo turístico declarado, de utilidad pública e interés social",
+      "definicion": "Los atractivos turísticos declarados son los atractivos turísticos definidos por el artículo 4 de la Ley 2068 de 2020 o la normativa que la modifique o reemplace. Conforme a la normativa se establece: Los concejos distritales o municipales y las asambleas departamentales, por iniciativa de la respectiva autoridad territorial, previo concepto del MinCIT, o por iniciativa de este último, podrán declarar como atractivos turísticos de utilidad pública e interés social aquellas zonas urbanas, de expansión o rurales, ecosistemas, paisajes, plazas, vías, monumentos, construcciones y otros que deban desarrollarse con sujeción a planes especiales, adquirirse por el Estado o preservarse, restaurarse o reconstruirse, que igualmente deberán ser incluidos en el renglón turístico del siguiente plan de desarrollo distrital o municipal. [...] PARÁGRAFO 2. El Ministerio de Comercio, Industria y Turismo elaborará el inventario turístico del país que permita identificar los atractivos turísticos. Dicho inventario servirá de base para: 1. la planificación y el ordenamiento territorial de la actividad, 2. la orientación de la oferta de programas de competitividad y promoción turística, incluidos los productos y servicios, que se presten al turista, 3. la determinación de las condiciones de uso de las zonas declaradas como atractivo turístico, sin perjuicio de las competencias establecidas para las autoridades en las normas ambientales vigentes, y 4. la generación de alianzas público-privadas que potencialicen el desarrollo turístico en los departamentos, municipios, distritos e integraciones regionales del país. [...]"
+    },
+    {
+      "termino": "Atractivo turístico",
+      "definicion": "Recursos naturales y culturales que tienen el potencial y capacidad de atraer a los visitantes (Ley 2068 de 2020)."
+    },
+    {
+      "termino": "Autoridad tradicional indígena",
+      "definicion": "Las autoridades tradicionales son integrantes de una comunidad indígena que, en el marco de su propia estructura cultural, ejercen funciones de organización, gobierno, gestión y control social. Las autoridades tradicionales y los cabildos indígenas pueden manejar y administrar las áreas o terrenos que se constituyan con el carácter de resguardo indígena."
+    },
+    {
+      "termino": "Beneficiario",
+      "definicion": "Experiencia turística, unidad productiva, prestador de servicios u organización de base comunitaria que, cumpliendo los criterios habilitantes y de priorización, es seleccionada para recibir el diagnóstico y dotación en el marco de la presente convocatoria. El proyecto beneficiará a un total de 54 experiencias, con un máximo de tres (3) por municipio."
+    },
+    {
+      "termino": "Cabildo Indígena",
+      "definicion": "Es una entidad pública especial, cuyos integrantes son miembros de una comunidad indígena, elegidos y reconocidos por ésta, con una organización socio política tradicional, cuya función es representar legalmente a la comunidad, ejercer la autoridad y realizar las actividades que le atribuyen las leyes, sus usos, costumbres y el reglamento interno de cada comunidad. Las autoridades tradicionales y los cabildos indígenas pueden manejar y administrar las áreas o terrenos que se constituyan con el carácter de resguardo indígena."
+    },
+    {
+      "termino": "Criterios de Evaluación",
+      "definicion": "Son las características de cada atributo que genera un puntaje para darle un valor a los aspectos definidos como calificables en la convocatoria."
+    },
+    {
+      "termino": "Cultura",
+      "definicion": "Según la Conferencia Mundial sobre las Políticas Culturales realizada en México, 'la cultura puede considerarse actualmente como el conjunto de los rasgos distintivos, espirituales y materiales, intelectuales y afectivos que caracterizan a una sociedad o a un grupo social. Ella engloba, además de las artes y las letras, los modos de vida, los derechos fundamentales al ser humano, los sistemas de valores, las tradiciones y las creencias y que la cultura da al hombre la capacidad de reflexionar sobre sí mismo (…) A través de ella el hombre se expresa, toma conciencia de sí mismo, se reconoce como un proyecto inacabado, pone en cuestión sus propias realizaciones, busca incansablemente nuevas significaciones, y crea obras que lo trascienden' (Unesco, 1982). Según la Ley General de Cultura, Ley 397 de 1997 define que 'La cultura es el conjunto de rasgos distintivos, espirituales, materiales, intelectuales y emocionales que caracterizan a los grupos humanos y que comprende, más allá de las artes y las letras, modos de vida, derechos humanos, sistemas de valores, tradiciones y creencias. En sus diversas manifestaciones, es fundamento de la nacionalidad y actividad propia de la sociedad colombiana en su conjunto, como proceso generado individual y colectivamente por los colombianos. Dichas manifestaciones constituyen parte integral de la identidad y la cultura colombianas'."
+    },
+    {
+      "termino": "Destino turístico",
+      "definicion": "Es una unidad territorial con vocación turística delimitada espacialmente que cuenta con capacidad administrativa para desarrollar instrumentos comunes de gestión, enfocados a lograr su sostenibilidad. Se caracteriza por la presencia de algunos de los siguientes componentes: atractivos, servicios o facilidades, infraestructura básica, actores públicos, privados o demanda turística, como conjunto de bienes y servicios ofrecidos al visitante o turista con valor agregado, en la zona y por diversos grupos humanos, entre los cuales se encuentra la población residente (MinCIT, 2006)."
+    },
+    {
+      "termino": "Documentación administrativa",
+      "definicion": "Documentación remitida por el postulante y la cual es indispensable para continuar en la fase de evaluación y selección."
+    },
+    {
+      "termino": "Economía Circular en el Turismo",
+      "definicion": "Es un modelo de producción y consumo orientado a extender la vida útil y sostenibilidad de los productos y servicios dentro de la cadena de valor del sector turismo, reduciendo el impacto negativo que la actividad pueda tener en el ecosistema. Puede implicar acciones para compartir, alquilar, reutilizar, reparar, renovar y/o reciclar materiales de productos y servicios del sector."
+    },
+    {
+      "termino": "Economía Popular y Comunitaria",
+      "definicion": "La economía popular y comunitaria (EPC), hace referencia al trabajo realizado por las personas para garantizar la reproducción social y biológica de sus hogares y comunidades, bien sea a través de una relación mercantil informal, o realizando trabajos de cuidado y comunitarios. La población que hace parte de estas economías, quienes predominantemente son la clase trabajadora no asalariada y sus familias, no se encuentran en relación de dependencia con algún empleador, por tanto, no son reconocidos por el Estado como trabajadores y carecen de derechos sociales asociados a su trabajo, como el derecho a una remuneración justa, a la negociación colectiva o a la pensión; dado que la EPC está excluida del contrato social donde debe tener derechos sociales y a su vez obligaciones."
+    },
+    {
+      "termino": "Entidad Territorial",
+      "definicion": "Según el artículo 286 de la Constitución Política 'son entidades territoriales los departamentos, municipios, distritos y territorios indígenas...'."
+    },
+    {
+      "termino": "Esquemas asociativos de entidades territoriales",
+      "definicion": "Son acuerdos de voluntades entre entidades territoriales o asociaciones de entidades territoriales, con el fin de alcanzar objetivos comunes, que no podrían lograr individualmente y así obtener el mejoramiento del nivel de vida de sus comunidades. Podrán incluir regiones administrativas y de planificación, las regiones de planeación y gestión, las asociaciones de departamentos, las áreas metropolitanas, las asociaciones de distritos especiales, las provincias administrativas y de planificación, y las asociaciones de municipios."
+    },
+    {
+      "termino": "Fomento",
+      "definicion": "Apoyo, incentivos, recursos o medidas que faciliten el desarrollo y la promoción de determinadas actividades."
+    },
+    {
+      "termino": "MiPymes",
+      "definicion": "Micro, pequeñas y medianas empresas naturales o jurídicas que suelen ser generadoras de empleo y contribuyen al crecimiento económico del país inscrita y/o constituida legalmente en Colombia. Para efectos del Manual de Destinación de Recursos y Presentación de Programas y Proyectos, se incluirá en el concepto a los esquemas asociativos de entidades territoriales. Además, los cabildos indígenas y sus asociaciones podrán presentar proyectos representados a través de cabildos indígenas, asociaciones de cabildos indígenas, autoridades tradicionales indígenas, consejos indígenas y/o organizaciones indígenas de derecho público de carácter especial."
+    },
+    {
+      "termino": "Municipio RTPP",
+      "definicion": "Municipios que integran la Red Turística de Pueblos Patrimonio de Colombia: Aguadas, Barichara, Ciénaga, Jardín, Socorro, Guadalajara de Buga, Honda, Jericó, La Playa de Belén, Villa de Guaduas, Monguí, Pore, Salamina, San Juan Girón, Santa Cruz de Lorica, Santa Cruz de Mompox, Santa Fe de Antioquia y Villa de Leyva."
+    },
+    {
+      "termino": "Plan de Inversión",
+      "definicion": "Documento técnico que detalla los rubros, cantidades, características y justificación de las dotaciones requeridas por cada experiencia priorizada, aprobado por el Comité Técnico de Seguimiento."
+    },
+    {
+      "termino": "Prestador de servicio turístico",
+      "definicion": "Es toda persona natural o jurídica que habitualmente proporcione, intermedie o contrate directa o indirectamente con el turista, la prestación de los servicios turísticos, el cual se encuentra obligado a inscribirse en el Registro Nacional de Turismo antes de iniciar sus operaciones."
+    },
+    {
+      "termino": "Portafolio digital RTPP",
+      "definicion": "Producto editorial digital que consolida la oferta de servicios, actividades y experiencias turísticas culturales de los 18 municipios de la RTPP, con contenidos validados, fotografías en alta calidad, mapas e infografías."
+    },
+    {
+      "termino": "Representante o Responsable de la Experiencia",
+      "definicion": "Persona natural mayor de edad, identificada con cédula de ciudadanía vigente, que actúa en nombre y representación del beneficiario seleccionado. Será el interlocutor para efectos de: firma de actas de entrega y compromiso, recepción física de dotaciones, gestión de subsanaciones y cumplimiento de obligaciones derivadas de la convocatoria. En el caso de unidades productivas individuales, corresponderá al propietario, administrador o titular del RNT. En el caso de colectivos, red de prestadores, cadena de valor encadenada, asociaciones u organizaciones de base comunitaria, corresponderá al representante legal o a la persona debidamente autorizada mediante documento escrito, acompañado de acta de asamblea."
+    },
+    {
+      "termino": "Subsanación",
+      "definicion": "Oportunidad única otorgada al proponente para corregir inconsistencias documentales detectadas en la fase de habilitación, dentro de un plazo máximo de tres (3) días hábiles posterior a notificación."
+    },
+    {
+      "termino": "Turismo cultural",
+      "definicion": "Es un tipo de actividad turística en el que la motivación esencial del visitante es aprender, descubrir, experimentar y consumir los atractivos/productos culturales, materiales e inmateriales, de un destino turístico. Estos atractivos/productos se refieren a un conjunto de elementos materiales, intelectuales, espirituales y emocionales distintivos de una sociedad que engloba las artes y la arquitectura, el patrimonio histórico y cultural, el patrimonio gastronómico, la literatura, la música, las industrias creativas y las culturas vivas con sus formas de vida, sistemas de valores, creencias y tradiciones (OMT, 2019)."
+    },
+    {
+      "termino": "Turismo de naturaleza",
+      "definicion": "El sector de Turismo de Naturaleza comprende todo tipo de viajes enfocados en la naturaleza, en los que la principal motivación es la observación y apreciación de la biodiversidad, acompañada de la cultura de poblaciones locales. Este sector se divide en tres subproductos: Ecoturismo (avistamiento de aves y de ballenas, y playas prístinas); Turismo Rural (Paisaje Cultural Cafetero, haciendas de bienestar y de actividades tradicionales); y Turismo de Aventura (buceo, rafting, rapel, torrentismo, trekking, parapente, kitesurf y windsurf, entre otras actividades)."
+    },
+    {
+      "termino": "Unidad productiva",
+      "definicion": "Se entiende por unidad productiva una persona o grupo de personas que se dedican a realizar actividades con ánimo de lucro asociadas a la cadena de valor de turismo y conexas, hacen parte de una organización comunitaria, étnica, social o cultural constituida y pueden encontrarse inscritas en el Registro Mercantil y/o Registro Nacional de Turismo."
+    }
+  ]
+}

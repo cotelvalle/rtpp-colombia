@@ -1,0 +1,491 @@
+import React from 'react';
+import {
+  ActivosIcon,
+  ProhibidoIcon,
+  PresupuestoIcon,
+  ArtisanWelcome,
+  JeepWillysIcon,
+  ColonialHouseIcon,
+  WeavingLoomIcon,
+  ArtisanHandsIcon
+} from './SVGIllustrations';
+import { InfoIcon } from './SVGIcons';
+
+export const ABCConvocatoria: React.FC = () => {
+  const fasesInfo = [
+    {
+      id: 'fase1',
+      title: 'Fase 1: Habilitación Documental',
+      subtitle: 'Filtro inicial "Cumple / No Cumple"',
+      icon: <ColonialHouseIcon size={60} />,
+      color: 'var(--color-ocean)',
+      desc: 'El equipo técnico revisa que todos los documentos cargados en la postulación cumplan estrictamente los requisitos legales. Si existen errores menores, se notificará al correo oficial del postulante.',
+      details: [
+        'Plazo de subsanación único de tres (3) días hábiles.',
+        'La no subsanación oportuna es causal de descalificación directa.',
+        'Solo pasan a la Fase 2 las propuestas en estado "Habilitado".'
+      ],
+      date: 'Apertura: 1 de Junio de 2026'
+    },
+    {
+      id: 'fase2',
+      title: 'Fase 2: Priorización Técnica (Preselección)',
+      subtitle: 'Evaluación de propuesta sobre 100 puntos',
+      icon: <WeavingLoomIcon size={60} />,
+      color: 'var(--color-mustard)',
+      desc: 'Las propuestas habilitadas se califican según la Matriz Técnica Oficial que evalúa pertinencia, impacto y salvaguarda cultural. Se genera un ranking de mayor a menor.',
+      details: [
+        'Puntaje máximo de 100 puntos.',
+        'Quedan preseleccionadas las 10 mejores experiencias por cada municipio.',
+        'Es una etapa de filtro técnico, no la asignación final.'
+      ],
+      isCurrent: true,
+      notice: 'Nos comunicaremos directamente con aquellas experiencias de turismo cultural que hayan sido preseleccionadas, y se les irá informando oportunamente los plazos y tiempos exactos de los siguientes procesos.',
+      date: 'Por definir (Próximamente)'
+    },
+    {
+      id: 'fase3',
+      title: 'Fase 3: Validación en Territorio',
+      subtitle: 'Visitas de campo operadas por Cotelco Valle',
+      icon: <JeepWillysIcon size={60} />,
+      color: 'var(--color-terracotta)',
+      desc: 'El equipo de COTELCO se comunicará de forma directa con las propuestas preseleccionadas para programar las visitas técnicas en campo.',
+      details: [
+        'Verificación física de la existencia de la experiencia.',
+        'Identificación y diagnóstico de los activos productivos.',
+        'Asistencia obligatoria del postulante a la jornada de co-creación.'
+      ],
+      date: 'Sujeto a coordinación'
+    },
+    {
+      id: 'fase4',
+      title: 'Resultado Final: Dotación y Portafolio',
+      subtitle: 'Asignación oficial de activos productivos',
+      icon: <ArtisanHandsIcon size={60} />,
+      color: 'var(--color-forest)',
+      desc: 'El Comité Técnico formaliza la lista de hasta tres (3) experiencias turísticas seleccionadas por cada uno de los 18 municipios (máximo 54 a nivel nacional).',
+      details: [
+        'Entrega física de activos valorados en hasta $5.000.000 COP.',
+        'Inclusión en el Portafolio Digital de la Red.',
+        'Invitación a rueda comercial nacional.'
+      ],
+      date: 'Cierre del proyecto'
+    }
+  ];
+
+  return (
+    <div className="section-container" style={{ maxWidth: '1000px', margin: '0 auto 60px auto', padding: '0 20px' }}>
+      
+      {/* Cabecera Intro */}
+      <div style={{ 
+        display: 'grid', 
+        gridTemplateColumns: 'repeat(auto-fit, minmax(285px, 1fr))', 
+        alignItems: 'center', 
+        gap: '30px', 
+        marginBottom: '40px', 
+        backgroundColor: 'var(--color-surface)', 
+        padding: '30px', 
+        borderRadius: '20px', 
+        boxShadow: 'var(--shadow-md)', 
+        border: '1.5px solid var(--color-border)',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '4px', background: 'linear-gradient(90deg, var(--color-terracotta), var(--color-mustard), var(--color-ocean), var(--color-forest))' }}></div>
+        <div style={{ textAlign: 'left' }}>
+          <span className="hero-badge" style={{ marginBottom: '12px', backgroundColor: 'var(--color-forest-light)', color: 'var(--color-forest)', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+            <InfoIcon size={14} /> Guía Paso a Paso
+          </span>
+          <h2 style={{ fontSize: '36px', fontFamily: "'Playfair Display', serif", color: 'var(--color-forest)', fontWeight: 900, marginBottom: '12px', lineHeight: '1.1' }}>
+            Ruta de la Convocatoria
+          </h2>
+          <p style={{ fontSize: '15px', color: 'var(--color-ink-light)', lineHeight: '1.6', margin: 0 }}>
+            Conoce de principio a fin las etapas por las que pasará tu propuesta. Sigue este sendero para entender los requisitos, evaluaciones y la esperada dotación final.
+          </p>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <ArtisanWelcome expression="happy" size={135} />
+          <div style={{ marginTop: '8px', fontStyle: 'italic', fontSize: '12px', color: 'var(--color-ink-light)', fontWeight: 600 }}>¡Bienvenidos al Sendero!</div>
+        </div>
+      </div>
+
+      {/* CRONOGRAMA VISUAL HORIZONTAL (ESTADO ACTUAL) */}
+      <div style={{ backgroundColor: 'var(--color-surface)', borderRadius: '16px', border: '1px solid var(--color-border)', padding: '40px 30px', marginBottom: '60px', boxShadow: 'var(--shadow-sm)', position: 'relative' }}>
+        <h3 style={{ fontSize: '24px', fontFamily: "'Playfair Display', serif", color: 'var(--color-ink)', textAlign: 'center', marginBottom: '10px', fontWeight: 900 }}>
+          Cronograma de Fechas
+        </h3>
+        <p style={{ textAlign: 'center', fontSize: '14px', color: 'var(--color-ink-light)', marginBottom: '40px' }}>
+          Conoce el estado de avance. Las etapas marcadas a color representan el progreso actual.
+        </p>
+
+        {/* Contenedor con scroll en móviles si es necesario */}
+        <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', paddingBottom: '10px', maxWidth: '800px', margin: '0 auto' }}>
+          
+          {/* Línea conectora gris de fondo */}
+          <div style={{ position: 'absolute', top: '22px', left: '10%', right: '10%', height: '4px', backgroundColor: '#E2E8F0', zIndex: 1, borderRadius: '4px' }}></div>
+          
+          {/* Línea conectora de progreso (ilumina hasta la fase actual) */}
+          <div style={{ position: 'absolute', top: '22px', left: '10%', width: '30%', height: '4px', background: 'linear-gradient(90deg, var(--color-ocean), var(--color-mustard))', zIndex: 2, borderRadius: '4px' }}></div>
+
+          {/* Hito 1: Apertura (Pasada/Activa) */}
+          <div style={{ position: 'relative', zIndex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, textAlign: 'center' }}>
+            <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'var(--color-ocean)', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '20px', border: '4px solid #FFFFFF', boxShadow: '0 4px 10px rgba(0,0,0,0.1)', marginBottom: '12px' }}>1</div>
+            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '13px', fontWeight: 800, color: 'var(--color-ink)' }}>Lanzamiento</span>
+            <span style={{ fontSize: '12px', color: 'var(--color-ocean)', fontWeight: 700, marginTop: '4px' }}>1 Junio 2026</span>
+          </div>
+
+          {/* Hito 2: Evaluación (Fase Actual/Prendida) */}
+          <div style={{ position: 'relative', zIndex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, textAlign: 'center' }}>
+            <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'var(--color-mustard)', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '20px', border: '4px solid #FFFFFF', boxShadow: '0 0 15px rgba(234, 179, 8, 0.4)', marginBottom: '12px' }}>2</div>
+            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '13px', fontWeight: 800, color: 'var(--color-ink)' }}>Evaluación</span>
+            <span style={{ fontSize: '12px', color: 'var(--color-mustard)', fontWeight: 700, marginTop: '4px' }}>En curso</span>
+          </div>
+
+          {/* Hito 3: Visitas (Inactiva/Gris) */}
+          <div style={{ position: 'relative', zIndex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, textAlign: 'center' }}>
+            <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: '#CBD5E1', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '20px', border: '4px solid #FFFFFF', marginBottom: '12px' }}>3</div>
+            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '13px', fontWeight: 600, color: 'var(--color-ink-light)' }}>Visitas Campo</span>
+            <span style={{ fontSize: '12px', color: 'var(--color-ink-light)', marginTop: '4px' }}>Por definir</span>
+          </div>
+
+          {/* Hito 4: Resultados (Inactiva/Gris) */}
+          <div style={{ position: 'relative', zIndex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, textAlign: 'center' }}>
+            <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: '#CBD5E1', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '20px', border: '4px solid #FFFFFF', marginBottom: '12px' }}>4</div>
+            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '13px', fontWeight: 600, color: 'var(--color-ink-light)' }}>Dotación Final</span>
+            <span style={{ fontSize: '12px', color: 'var(--color-ink-light)', marginTop: '4px' }}>Por definir</span>
+          </div>
+
+        </div>
+      </div>
+
+      {/* RUTA TIMELINE VERTICAL */}
+      <div style={{ position: 'relative', padding: '40px 0', marginBottom: '60px' }}>
+        
+        {/* La línea central serpenteante (timeline backbone) */}
+        <div style={{
+          position: 'absolute',
+          top: '0',
+          bottom: '0',
+          left: '50px', // Alineada a la izquierda en lugar de al centro para dar más espacio al texto
+          width: '4px',
+          backgroundColor: '#E2E8F0',
+          zIndex: 1
+        }}></div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
+          {fasesInfo.map((fase, index) => (
+            <div key={fase.id} style={{ display: 'flex', gap: '30px', position: 'relative', zIndex: 2 }}>
+              
+              {/* Icono Nodo en la Línea */}
+              <div style={{ 
+                width: '100px', 
+                height: '100px', 
+                borderRadius: '50%', 
+                backgroundColor: fase.color, 
+                border: '4px solid #FFFFFF',
+                boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+                position: 'relative'
+              }}>
+                <div style={{ filter: 'brightness(0) invert(1)' }}>
+                  {fase.icon}
+                </div>
+                {/* Etiqueta de Paso */}
+                <div style={{
+                  position: 'absolute',
+                  top: '-10px',
+                  right: '-10px',
+                  backgroundColor: '#FFFFFF',
+                  color: fase.color,
+                  fontWeight: 900,
+                  fontSize: '12px',
+                  padding: '4px 8px',
+                  borderRadius: '12px',
+                  border: `2px solid ${fase.color}`,
+                  fontFamily: "'Outfit', sans-serif"
+                }}>
+                  {index + 1}
+                </div>
+              </div>
+
+              {/* Caja de Información de la Fase */}
+              <div style={{ 
+                flexGrow: 1, 
+                backgroundColor: '#FFFFFF', 
+                borderRadius: '16px', 
+                border: `1.5px solid ${fase.color}`, 
+                padding: '25px', 
+                boxShadow: '0 4px 15px rgba(0,0,0,0.03)',
+                position: 'relative'
+              }}>
+                {/* Triangulito conectando el globo de texto al icono */}
+                <div style={{
+                  position: 'absolute',
+                  left: '-8px',
+                  top: '40px',
+                  width: '14px',
+                  height: '14px',
+                  backgroundColor: '#FFFFFF',
+                  borderBottom: `1.5px solid ${fase.color}`,
+                  borderLeft: `1.5px solid ${fase.color}`,
+                  transform: 'rotate(45deg)'
+                }}></div>
+
+                <h3 style={{ fontSize: '24px', fontFamily: "'Playfair Display', serif", color: fase.color, margin: '0 0 4px 0', fontWeight: 900, display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                  {fase.title}
+                  {(fase as any).isCurrent && (
+                    <span style={{ backgroundColor: '#FEF08A', color: '#854D0E', padding: '4px 10px', borderRadius: '6px', fontSize: '11px', fontWeight: 900, letterSpacing: '0.05em', fontFamily: "'Outfit', sans-serif" }}>
+                      📍 ETAPA ACTUAL
+                    </span>
+                  )}
+                </h3>
+                
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px', flexWrap: 'wrap' }}>
+                  <span style={{ fontSize: '13px', fontFamily: "'Outfit', sans-serif", fontWeight: 'bold', color: 'var(--color-ink-light)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    {fase.subtitle}
+                  </span>
+                  {(fase as any).date && (
+                    <>
+                      <span style={{ color: 'var(--color-border)', fontSize: '12px' }}>|</span>
+                      <span style={{ fontSize: '12px', fontWeight: 600, color: fase.color, backgroundColor: `${fase.color}15`, padding: '4px 10px', borderRadius: '20px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                        📅 {(fase as any).date}
+                      </span>
+                    </>
+                  )}
+                </div>
+                
+                <p style={{ fontSize: '15px', color: 'var(--color-ink)', lineHeight: '1.6', marginBottom: '20px' }}>
+                  {fase.desc}
+                </p>
+
+                <div style={{ backgroundColor: '#F8FAFC', padding: '16px', borderRadius: '8px', borderLeft: `4px solid ${fase.color}` }}>
+                  <h4 style={{ fontSize: '13px', color: fase.color, margin: '0 0 8px 0', fontWeight: 800, textTransform: 'uppercase' }}>
+                    Puntos Clave
+                  </h4>
+                  <ul style={{ margin: 0, paddingLeft: '16px', fontSize: '13.5px', color: 'var(--color-ink)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    {fase.details.map((detail, idx) => (
+                      <li key={idx} style={{ lineHeight: '1.4' }}>{detail}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                {(fase as any).notice && (
+                  <div style={{ marginTop: '15px', backgroundColor: '#FFFBEB', padding: '14px', borderRadius: '8px', border: '1px solid #FEF08A', fontSize: '13px', color: '#854D0E', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                    <span style={{ fontSize: '18px' }}>📢</span>
+                    <p style={{ margin: 0, lineHeight: '1.5' }}>
+                      <strong>Atención Postulantes:</strong> {(fase as any).notice}
+                    </p>
+                  </div>
+                )}
+
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+      {/* BLOQUE DE QUIÉNES PARTICIPAN Y CAUSALES DE RECHAZO (Integrados) */}
+      <h3 style={{ fontSize: '28px', fontFamily: "'Playfair Display', serif", color: 'var(--color-forest)', textAlign: 'center', marginBottom: '30px', fontWeight: 900 }}>
+        Reglas de Juego: Requisitos y Advertencias
+      </h3>
+      
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginBottom: '60px' }}>
+        
+        {/* SÍ PARTICIPAN */}
+        <div style={{ backgroundColor: '#F0FDF4', borderRadius: '16px', border: '1.5px solid #BBF7D0', padding: '30px', boxShadow: 'var(--shadow-sm)' }}>
+          <h4 style={{ fontFamily: "'Playfair Display', serif", fontSize: '22px', color: '#166534', fontWeight: 900, marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <span style={{ fontSize: '24px' }}>✓</span> Perfiles Habilitados
+          </h4>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#22C55E', marginTop: '6px', flexShrink: 0 }}></div>
+              <p style={{ margin: 0, fontSize: '14px', color: '#166534', lineHeight: '1.5' }}><strong>Con RNT Activo:</strong> Prestadores que cuenten con el Registro Nacional de Turismo vigente.</p>
+            </li>
+            <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#22C55E', marginTop: '6px', flexShrink: 0 }}></div>
+              <p style={{ margin: 0, fontSize: '14px', color: '#166534', lineHeight: '1.5' }}><strong>Sin RNT pero Formales:</strong> Actores complementarios formales (artesanos, cocineras tradicionales).</p>
+            </li>
+            <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#22C55E', marginTop: '6px', flexShrink: 0 }}></div>
+              <p style={{ margin: 0, fontSize: '14px', color: '#166534', lineHeight: '1.5' }}><strong>Comunitarias:</strong> Organizaciones, resguardos indígenas o JAC con unidades de turismo.</p>
+            </li>
+          </ul>
+        </div>
+
+        {/* NO PARTICIPAN (Rechazo) */}
+        <div style={{ backgroundColor: '#FFF1F2', borderRadius: '16px', border: '1.5px solid #FECDD3', padding: '30px', boxShadow: 'var(--shadow-sm)' }}>
+          <h4 style={{ fontFamily: "'Playfair Display', serif", fontSize: '22px', color: '#BE185D', fontWeight: 900, marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <span style={{ fontSize: '24px' }}>✕</span> Causales de Exclusión
+          </h4>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#F43F5E', marginTop: '6px', flexShrink: 0 }}></div>
+              <p style={{ margin: 0, fontSize: '14px', color: '#BE185D', lineHeight: '1.5' }}><strong>No residencia:</strong> No tener domicilio comercial en los 18 municipios.</p>
+            </li>
+            <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#F43F5E', marginTop: '6px', flexShrink: 0 }}></div>
+              <p style={{ margin: 0, fontSize: '14px', color: '#BE185D', lineHeight: '1.5' }}><strong>Menos de 2 años:</strong> No acreditar mínimo dos años de operación comercial demostrable.</p>
+            </li>
+            <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#F43F5E', marginTop: '6px', flexShrink: 0 }}></div>
+              <p style={{ margin: 0, fontSize: '14px', color: '#BE185D', lineHeight: '1.5' }}><strong>Conflicto de Interés:</strong> Ser servidor público activo o pariente de los diseñadores/evaluadores de la convocatoria.</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      {/* BLOQUE DE DOCUMENTACIÓN REQUERIDA (NUEVO) */}
+      <h3 style={{ fontSize: '28px', fontFamily: "'Playfair Display', serif", color: 'var(--color-forest)', textAlign: 'center', marginBottom: '15px', fontWeight: 900 }}>
+        Documentación Mínima Requerida
+      </h3>
+      <p style={{ textAlign: 'center', fontSize: '14px', color: 'var(--color-ink)', marginBottom: '30px', maxWidth: '700px', margin: '0 auto 40px auto', lineHeight: '1.6' }}>
+        Asegúrate de preparar los documentos según el tipo de entidad al que perteneces. <br/>
+        <strong>Transversal para todos:</strong> Formulario de postulación (On-line), Carta de compromiso firmada y Anexos soporte opcionales (videos/portafolios, máx 10MB por archivo).
+      </p>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px', marginBottom: '60px' }}>
+        
+        {/* Categoría 1: PST */}
+        <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1.5px solid var(--color-ocean)', padding: '25px', boxShadow: 'var(--shadow-sm)', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', backgroundColor: 'var(--color-ocean)' }}></div>
+          <h4 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '17px', color: 'var(--color-ocean)', fontWeight: 800, marginBottom: '15px', lineHeight: '1.3' }}>
+            1. Prestadores Turísticos (con RNT)
+          </h4>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px', color: 'var(--color-ink)' }}>
+            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-ocean)'}}>•</span> Certificado de Cámara de Comercio (Vigencia 2026).</li>
+            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-ocean)'}}>•</span> RNT Activo 2026.</li>
+            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-ocean)'}}>•</span> Cédula del representante legal.</li>
+            <li style={{ marginTop: '10px', padding: '12px', backgroundColor: '#F0F9FF', borderRadius: '8px', fontSize: '12.5px', border: '1px solid #BAE6FD' }}>
+              <strong style={{color: '#0369A1'}}>Si es Guía Profesional:</strong> Tarjeta Profesional, RNT Vigente, RUT y Certificado de Residencia expedido por autoridad.
+            </li>
+          </ul>
+        </div>
+
+        {/* Categoría 2: Complementarios */}
+        <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1.5px solid var(--color-mustard)', padding: '25px', boxShadow: 'var(--shadow-sm)', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', backgroundColor: 'var(--color-mustard)' }}></div>
+          <h4 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '17px', color: 'var(--color-mustard)', fontWeight: 800, marginBottom: '5px', lineHeight: '1.3' }}>
+            2. Formales Complementarios
+          </h4>
+          <p style={{ fontSize: '12px', color: 'var(--color-ink-light)', marginBottom: '15px', fontWeight: 600 }}>Gastronomía, artesanías, agroturismo.</p>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px', color: 'var(--color-ink)' }}>
+            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-mustard)'}}>•</span> Certificado de Cámara de Comercio (Vigencia 2026).</li>
+            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-mustard)'}}>•</span> Cédula del representante legal.</li>
+          </ul>
+        </div>
+
+        {/* Categoría 3: Comunitarias */}
+        <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1.5px solid var(--color-terracotta)', padding: '25px', boxShadow: 'var(--shadow-sm)', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', backgroundColor: 'var(--color-terracotta)' }}></div>
+          <h4 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '17px', color: 'var(--color-terracotta)', fontWeight: 800, marginBottom: '5px', lineHeight: '1.3' }}>
+            3. Étnicas y Comunitarias
+          </h4>
+          <p style={{ fontSize: '12px', color: 'var(--color-ink-light)', marginBottom: '15px', fontWeight: 600 }}>Asociaciones, cabildos, fundaciones.</p>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px', color: 'var(--color-ink)' }}>
+            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-terracotta)'}}>•</span> Certificación de actividad productiva expedida por la entidad.</li>
+            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-terracotta)'}}>•</span> Cédula del representante legal (organización postulante).</li>
+            <li style={{ marginTop: '10px', padding: '12px', backgroundColor: '#FFF7ED', borderRadius: '8px', fontSize: '12.5px', border: '1px solid #FED7AA' }}>
+              <strong style={{color: '#C2410C'}}>Nota Importante:</strong> Solo será posible postular una (1) unidad productiva por entidad comunitaria.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      {/* BLOQUE MATRIZ Y PRESUPUESTO */}
+      <h3 style={{ fontSize: '28px', fontFamily: "'Playfair Display', serif", color: 'var(--color-forest)', textAlign: 'center', marginBottom: '30px', fontWeight: 900 }}>
+        Financiación y Calificación
+      </h3>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '40px', marginBottom: '40px' }}>
+        
+        {/* Telar de Puntajes Visual */}
+        <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1px solid var(--color-border)', padding: '30px', boxShadow: 'var(--shadow-md)' }}>
+          <h4 style={{ fontFamily: "'Playfair Display', serif", fontSize: '22px', color: 'var(--color-ink)', fontWeight: 900, marginBottom: '20px' }}>
+            Matriz Técnica Oficial (100 Pts)
+          </h4>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '14px', marginBottom: '6px' }}>
+                <span style={{ fontWeight: 800, color: 'var(--color-ink)' }}>1. Pertinencia en turismo cultural</span>
+                <span style={{ fontWeight: 900, color: 'var(--color-terracotta)' }}>35 Puntos</span>
+              </div>
+              <div style={{ height: '18px', backgroundColor: '#F1F5F9', borderRadius: '50px', overflow: 'hidden' }}>
+                <div style={{ width: '35%', height: '100%', background: 'var(--color-terracotta)' }}></div>
+              </div>
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '14px', marginBottom: '6px' }}>
+                <span style={{ fontWeight: 800, color: 'var(--color-ink)' }}>2. Propuesta de valor</span>
+                <span style={{ fontWeight: 900, color: 'var(--color-mustard)' }}>25 Puntos</span>
+              </div>
+              <div style={{ height: '18px', backgroundColor: '#F1F5F9', borderRadius: '50px', overflow: 'hidden' }}>
+                <div style={{ width: '25%', height: '100%', background: 'var(--color-mustard)' }}></div>
+              </div>
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '14px', marginBottom: '6px' }}>
+                <span style={{ fontWeight: 800, color: 'var(--color-ink)' }}>3. Impacto comunitario</span>
+                <span style={{ fontWeight: 900, color: 'var(--color-ocean)' }}>20 Puntos</span>
+              </div>
+              <div style={{ height: '18px', backgroundColor: '#F1F5F9', borderRadius: '50px', overflow: 'hidden' }}>
+                <div style={{ width: '20%', height: '100%', background: 'var(--color-ocean)' }}></div>
+              </div>
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '14px', marginBottom: '6px' }}>
+                <span style={{ fontWeight: 800, color: 'var(--color-ink)' }}>4. Salvaguarda de patrimonio</span>
+                <span style={{ fontWeight: 900, color: 'var(--color-forest)' }}>20 Puntos</span>
+              </div>
+              <div style={{ height: '18px', backgroundColor: '#F1F5F9', borderRadius: '50px', overflow: 'hidden' }}>
+                <div style={{ width: '20%', height: '100%', background: 'var(--color-forest)' }}></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* Rubros de Presupuesto */}
+        <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1px solid var(--color-border)', padding: '30px', boxShadow: 'var(--shadow-md)' }}>
+          <h4 style={{ fontFamily: "'Playfair Display', serif", fontSize: '22px', color: 'var(--color-ink)', fontWeight: 900, marginBottom: '20px' }}>
+            Activos Financiables (Hasta 5MM)
+          </h4>
+          
+          <div style={{ marginBottom: '25px' }}>
+            <h5 style={{ fontSize: '15px', color: 'var(--color-forest)', fontWeight: 800, marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '18px' }}>✅</span> Sí se Financia
+            </h5>
+            <ul style={{ paddingLeft: '18px', margin: 0, fontSize: '13.5px', color: 'var(--color-ink-light)', lineHeight: '1.5' }}>
+              <li style={{ marginBottom: '6px' }}><strong>Maquinaria e insumos</strong> productivos indispensables para la experiencia.</li>
+              <li style={{ marginBottom: '6px' }}><strong>Equipos Verdes:</strong> Elementos de transición energética y sostenibilidad.</li>
+              <li style={{ marginBottom: '6px' }}><strong>Equipos de Seguridad:</strong> Botiquines, extintores, señalización especializada.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 style={{ fontSize: '15px', color: 'var(--color-rose)', fontWeight: 800, marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '18px' }}>❌</span> No se Financia
+            </h5>
+            <ul style={{ paddingLeft: '18px', margin: 0, fontSize: '13.5px', color: 'var(--color-ink-light)', lineHeight: '1.5' }}>
+              <li style={{ marginBottom: '6px' }}><strong>Obras Civiles:</strong> Locativas de cemento, construcción o pavimentación.</li>
+              <li style={{ marginBottom: '6px' }}><strong>Costos Operativos:</strong> Arriendos, nóminas o pago de servicios públicos.</li>
+              <li style={{ marginBottom: '6px' }}><strong>Tecnología común:</strong> Celulares personales, consolas de sonido recreativas.</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  );
+};

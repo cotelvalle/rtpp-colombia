@@ -1,0 +1,344 @@
+[
+  {
+    "id": "aguadas",
+    "name": "Aguadas",
+    "department": "Caldas",
+    "region": "Eje Cafetero",
+    "altitude": "2.214 msnm",
+    "temperature": "17°C",
+    "founded": "1808",
+    "keyVisuals": "Calles empinadas con casas coloniales de tapia pisada, balcones florecidos, tejados de barro y paisajes andinos cubiertos de niebla.",
+    "heritageHighlights": [
+      "Sombrero Aguadeño (tejido a mano en palma de iraca)",
+      "Pionono (dulce tradicional aguadeño)",
+      "Festival Nacional del Pasillo Colombiano"
+    ],
+    "identityColors": {
+      "primary": "#4A6B53",
+      "accent": "#D19C4C"
+    }
+  },
+  {
+    "id": "barichara",
+    "name": "Barichara",
+    "department": "Santander",
+    "region": "Andina / Nororiente",
+    "altitude": "1.300 msnm",
+    "temperature": "22°C",
+    "founded": "1705",
+    "keyVisuals": "Calles empedradas de color amarillo ocre, arquitectura colonial de piedra tallada a mano, iglesias monumentales y miradores sobre el cañón del río Suárez.",
+    "heritageHighlights": [
+      "Talla de piedra amarilla tradicional",
+      "Camino Real a Guane (obra de Geo von Lengerke)",
+      "Gastronomía de hormigas culonas y cabrito"
+    ],
+    "identityColors": {
+      "primary": "#8C6239",
+      "accent": "#C49A45"
+    }
+  },
+  {
+    "id": "cienaga",
+    "name": "Ciénaga",
+    "department": "Magdalena",
+    "region": "Caribe",
+    "altitude": "3 msnm",
+    "temperature": "28°C",
+    "founded": "1538",
+    "keyVisuals": "Mansiones republicanas e históricas frente a la plaza principal, arquitectura bananera del siglo XX y la majestuosa ciénaga grande junto al mar Caribe.",
+    "heritageHighlights": [
+      "Cuna del Realismo Mágico y el mito de la Caimán Cienaguero",
+      "Arquitectura Republicana e historia de la bonanza bananera",
+      "Termales de la Quebrada del Doctor"
+    ],
+    "identityColors": {
+      "primary": "#1A5F7A",
+      "accent": "#F2B666"
+    }
+  },
+  {
+    "id": "buga",
+    "name": "Guadalajara de Buga",
+    "department": "Valle del Cauca",
+    "region": "Pacífico / Suroccidente",
+    "altitude": "970 msnm",
+    "temperature": "24°C",
+    "founded": "1573",
+    "keyVisuals": "La imponente Basílica del Señor de los Milagros de color rojo ladrillo, calles coloniales del centro histórico y su cercanía al río Guadalajara.",
+    "heritageHighlights": [
+      "Santuario de la Basílica del Señor de los Milagros",
+      "Arquitectura religiosa y civil colonial preservada",
+      "Gastronomía valluna (pandebono, lulada, sancocho de gallina)"
+    ],
+    "identityColors": {
+      "primary": "#7A1C1C",
+      "accent": "#D19A3F"
+    }
+  },
+  {
+    "id": "honda",
+    "name": "Honda",
+    "department": "Tolima",
+    "region": "Andina / Centro",
+    "altitude": "229 msnm",
+    "temperature": "29°C",
+    "founded": "1539",
+    "keyVisuals": "Puentes de hierro que cruzan ríos caudalosos, la icónica Calle de las Trampas con su trazado sinuoso, y casonas de mercaderes del río Magdalena.",
+    "heritageHighlights": [
+      "La Ciudad de los Puentes (más de 40 puentes sobre el río Gualí y Magdalena)",
+      "Calle de las Trampas y arquitectura colonial española",
+      "Carnaval y Festival de la Subienda (pesca del Magdalena)"
+    ],
+    "identityColors": {
+      "primary": "#4A667A",
+      "accent": "#C98E3D"
+    }
+  },
+  {
+    "id": "jardin",
+    "name": "Jardín",
+    "department": "Antioquia",
+    "region": "Eje Cafetero / Antioquia",
+    "altitude": "1.750 msnm",
+    "temperature": "19°C",
+    "founded": "1863",
+    "keyVisuals": "Balcones de madera pintados de colores vibrantes llenos de geranios, una inmensa basílica neogótica en la plaza empedrada con sillas tradicionales de colores.",
+    "heritageHighlights": [
+      "Basílica Menor de la Inmaculada Concepción",
+      "Moliendas de panela tradicionales y fincas cafeteras",
+      "Avistamiento del Gallito de las Rocas y Reserva Natural"
+    ],
+    "identityColors": {
+      "primary": "#2D6A4F",
+      "accent": "#E63946"
+    }
+  },
+  {
+    "id": "jerico",
+    "name": "Jericó",
+    "department": "Antioquia",
+    "region": "Eje Cafetero / Antioquia",
+    "altitude": "1.900 msnm",
+    "temperature": "18°C",
+    "founded": "1850",
+    "keyVisuals": "Calles empinadas con zócalos coloridos, arquitectura de la colonización antioqueña, talleres artesanales de cuero y vistas panorámicas desde el cerro Las Nubes.",
+    "heritageHighlights": [
+      "Cuna del Carriel Antioqueño (bolso tradicional de cuero multitaza)",
+      "Santuario de Santa Laura Montoya (primera santa colombiana)",
+      "Tradición de fabricación de guarnielería y dulces de cardamomo"
+    ],
+    "identityColors": {
+      "primary": "#3B5C43",
+      "accent": "#C4493A"
+    }
+  },
+  {
+    "id": "la-playa",
+    "name": "La Playa de Belén",
+    "department": "Norte de Santander",
+    "region": "Andina / Nororiente",
+    "altitude": "1.450 msnm",
+    "temperature": "21°C",
+    "founded": "1862",
+    "keyVisuals": "Casas de una sola planta con fachadas blancas uniformes, zócalos de piedra, puertas marrones idénticas y el fondo rocoso del Área Única Natural Los Estoraques.",
+    "heritageHighlights": [
+      "Área Única Natural Los Estoraques (formaciones rocosas milenarias)",
+      "Arquitectura urbana homogénea y estricta conservación colonial",
+      "Parque Natural Yaragua"
+    ],
+    "identityColors": {
+      "primary": "#556B2F",
+      "accent": "#8B5A2B"
+    }
+  },
+  {
+    "id": "mongui",
+    "name": "Monguí",
+    "department": "Boyacá",
+    "region": "Andina / Centro-Oriente",
+    "altitude": "2.900 msnm",
+    "temperature": "12°C",
+    "founded": "1601",
+    "keyVisuals": "Casas coloniales de color blanco y verde pino, plaza de armas gigante con la Basílica de Nuestra Señora de Monguí y artesanos cosiendo balones a mano.",
+    "heritageHighlights": [
+      "Capital Balonera de Colombia (costura artesanal de balones de cuero)",
+      "Páramo de Ocetá (considerado el páramo más hermoso del mundo)",
+      "Puente de Calicanto (construcción colonial con cal, arena y sangre de toro)"
+    ],
+    "identityColors": {
+      "primary": "#1E4620",
+      "accent": "#D1A153"
+    }
+  },
+  {
+    "id": "pore",
+    "name": "Pore",
+    "department": "Casanare",
+    "region": "Orinoquía / Llanos Orientales",
+    "altitude": "250 msnm",
+    "temperature": "27°C",
+    "founded": "1644",
+    "keyVisuals": "Cárceles de piedra y ruinas coloniales cubiertas por raíces de árboles centenarios, calles de tierra colorada e inmensos paisajes de sabana llanera.",
+    "heritageHighlights": [
+      "Cuna de la Libertad (cuartel general de la campaña libertadora de Bolívar)",
+      "Ruinas históricas de las bóvedas de Pore hechas en ladrillo y piedra",
+      "Cultura llanera (joropo, arpa, cantos de vaquería)"
+    ],
+    "identityColors": {
+      "primary": "#7A593D",
+      "accent": "#E5A93C"
+    }
+  },
+  {
+    "id": "salamina",
+    "name": "Salamina",
+    "department": "Caldas",
+    "region": "Eje Cafetero",
+    "altitude": "1.822 msnm",
+    "temperature": "19°C",
+    "founded": "1825",
+    "keyVisuals": "Impresionante arquitectura de la colonización antioqueña, balcones de madera finamente tallada a mano, fuentes de agua metálicas y empinados caminos andinos.",
+    "heritageHighlights": [
+      "Ciudad Luz de Caldas (por su florecimiento intelectual y artístico)",
+      "Arquitectura de filigrana en madera (obra del maestro Eliseo Tangarife)",
+      "Valle de la Samaria y bosque de palma de cera"
+    ],
+    "identityColors": {
+      "primary": "#2A5C43",
+      "accent": "#CD853F"
+    }
+  },
+  {
+    "id": "giron",
+    "name": "San Juan Girón",
+    "department": "Santander",
+    "region": "Andina / Nororiente",
+    "altitude": "702 msnm",
+    "temperature": "26°C",
+    "founded": "1631",
+    "keyVisuals": "Centro histórico colonial intacto de paredes blancas y techos de teja de barro marrón, puentes de piedra arqueados que cruzan el río de Oro.",
+    "heritageHighlights": [
+      "Arquitectura colonial española conservada del siglo XVII",
+      "Basílica Menor de San Juan Bautista",
+      "Tradición tabacalera y gastronomía de dulces tradicionales"
+    ],
+    "identityColors": {
+      "primary": "#8C6A50",
+      "accent": "#CFA055"
+    }
+  },
+  {
+    "id": "lorica",
+    "name": "Santa Cruz de Lorica",
+    "department": "Córdoba",
+    "region": "Caribe",
+    "altitude": "7 msnm",
+    "temperature": "28°C",
+    "founded": "1740",
+    "keyVisuals": "El emblemático Mercado Público de color rojo y amarillo con arcos árabes a orillas del río Sinú, y edificios coloniales con influencia sirio-libanesa.",
+    "heritageHighlights": [
+      "Mercado Público (Monumento Nacional frente al río Sinú)",
+      "Influencia arquitectónica y cultural árabe-republicana",
+      "Gastronomía de sancocho de bocachico y mote de queso"
+    ],
+    "identityColors": {
+      "primary": "#8B1E1E",
+      "accent": "#D9A036"
+    }
+  },
+  {
+    "id": "mompox",
+    "name": "Santa Cruz de Mompox",
+    "department": "Bolívar",
+    "region": "Caribe / Río Magdalena",
+    "altitude": "10 msnm",
+    "temperature": "29°C",
+    "founded": "1537",
+    "keyVisuals": "Plazas coloniales amarillas frente al brazo del río Magdalena, portales porticados, rejas de hierro forjado de filigrana y atardeceres dorados en la ciénaga.",
+    "heritageHighlights": [
+      "Joyería artesanal en filigrana de oro y plata",
+      "Semana Santa Mompoxina (una de las más solemnes del país)",
+      "Casonas coloniales con patios internos y arquitectura defensiva del río"
+    ],
+    "identityColors": {
+      "primary": "#A67C1E",
+      "accent": "#1A5276"
+    }
+  },
+  {
+    "id": "santa-fe",
+    "name": "Santa Fe de Antioquia",
+    "department": "Antioquia",
+    "region": "Andina / Antioquia",
+    "altitude": "550 msnm",
+    "temperature": "27°C",
+    "founded": "1541",
+    "keyVisuals": "Calles empedradas flanqueadas por casas coloniales señoriales de portones macizos, patios centrales señoriales y el gran Puente de Occidente sobre el río Cauca.",
+    "heritageHighlights": [
+      "Puente de Occidente (obra maestra de ingeniería colgante de José María Villa)",
+      "Catedral Metropolitana e iglesias coloniales del siglo XVII",
+      "Producción de tamarindo artesanal y filigrana de plata"
+    ],
+    "identityColors": {
+      "primary": "#5C5C5C",
+      "accent": "#CBA135"
+    }
+  },
+  {
+    "id": "socorro",
+    "name": "Socorro",
+    "department": "Santander",
+    "region": "Andina / Nororiente",
+    "altitude": "1.230 msnm",
+    "temperature": "23°C",
+    "founded": "1683",
+    "keyVisuals": "Calles empedradas de gran pendiente, casonas coloniales con portones de madera tallada, monumentos históricos dedicados a los héroes de la independencia.",
+    "heritageHighlights": [
+      "Cuna de la insurrección de los Comuneros de 1781 (Manuela Beltrán)",
+      "Basílica Menor de Nuestra Señora del Socorro",
+      "Primer productor de café orgánico y cuna de la música de cuerda"
+    ],
+    "identityColors": {
+      "primary": "#4A6E75",
+      "accent": "#C9923B"
+    }
+  },
+  {
+    "id": "guaduas",
+    "name": "Villa de Guaduas",
+    "department": "Cundinamarca",
+    "region": "Andina / Centro",
+    "altitude": "990 msnm",
+    "temperature": "23°C",
+    "founded": "1572",
+    "keyVisuals": "Techos de paja y tejas coloniales, calles empedradas con el Camino Real empotrado, el mirador de la Piedra Capira y casonas coloniales presidenciales.",
+    "heritageHighlights": [
+      "Tierra natal de Policarpa Salavarrieta ('La Pola', heroína patria)",
+      "Asentamiento clave en la Expedición Botánica de José Celestino Mutis",
+      "Camino Real de Guaduas que conectaba a Santa Fe con el río Magdalena"
+    ],
+    "identityColors": {
+      "primary": "#7A4A3B",
+      "accent": "#D19C4A"
+    }
+  },
+  {
+    "id": "villa-de-leyva",
+    "name": "Villa de Leyva",
+    "department": "Boyacá",
+    "region": "Andina / Centro-Oriente",
+    "altitude": "2.149 msnm",
+    "temperature": "18°C",
+    "founded": "1572",
+    "keyVisuals": "La gigantesca Plaza Mayor empedrada de 14.000 metros cuadrados, casas coloniales encaladas con balcones de madera oscura, colinas semiáridas circundantes.",
+    "heritageHighlights": [
+      "La Plaza Mayor más grande de Colombia (conservación colonial total)",
+      "Riqueza paleontológica (fósil de Cronosaurio de 110 millones de años)",
+      "Festivales de Cometas, de Cine y de Luces navideñas"
+    ],
+    "identityColors": {
+      "primary": "#4A5A6A",
+      "accent": "#B8860B"
+    }
+  }
+]
