@@ -18,8 +18,8 @@ export const ABCConvocatoria: React.FC = () => {
       color: 'var(--color-ocean)',
       desc: 'El equipo técnico revisa que todos los documentos cargados en la postulación cumplan estrictamente los requisitos legales. Si existen errores menores, se notificará al correo oficial del postulante.',
       details: [
+        'Se reciben hasta diez (10) postulaciones por cada municipio.',
         'Plazo de subsanación único de tres (3) días hábiles.',
-        'La no subsanación oportuna es causal de descalificación directa.',
         'Solo pasan a la Fase 2 las propuestas en estado "Habilitado".'
       ],
       date: 'Apertura: 1 de Junio de 2026'
@@ -30,10 +30,10 @@ export const ABCConvocatoria: React.FC = () => {
       subtitle: 'Evaluación de propuesta sobre 100 puntos',
       icon: <WeavingLoomIcon size={60} />,
       color: 'var(--color-mustard)',
-      desc: 'Las propuestas habilitadas se califican según la Matriz Técnica Oficial que evalúa pertinencia, impacto y salvaguarda cultural. Se genera un ranking de mayor a menor.',
+      desc: 'Las propuestas habilitadas se califican según la Matriz Técnica Oficial que evalúa pertinencia, impacto y salvaguarda cultural. Las cinco (5) propuestas con mejor puntaje que pasen el filtro quedarán preclasificadas.',
       details: [
         'Puntaje máximo de 100 puntos.',
-        'Quedan preseleccionadas las 10 mejores experiencias por cada municipio.',
+        'Quedan preclasificadas las cinco (5) mejores experiencias por cada municipio.',
         'Es una etapa de filtro técnico, no la asignación final.'
       ],
       isCurrent: true,
@@ -46,7 +46,7 @@ export const ABCConvocatoria: React.FC = () => {
       subtitle: 'Visitas de campo operadas por Cotelco Valle',
       icon: <JeepWillysIcon size={60} />,
       color: 'var(--color-terracotta)',
-      desc: 'El equipo de COTELCO se comunicará de forma directa con las propuestas preseleccionadas para programar las visitas técnicas en campo.',
+      desc: 'El equipo de COTELCO se comunicará de forma directa con las cinco (5) propuestas preclasificadas por municipio para programar las visitas técnicas en campo.',
       details: [
         'Verificación física de la existencia de la experiencia.',
         'Identificación y diagnóstico de los activos productivos.',
