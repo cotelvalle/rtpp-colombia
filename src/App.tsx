@@ -267,7 +267,7 @@ function App() {
             </h3>
             <p style={{ color: 'var(--color-ink)', fontSize: '14px', lineHeight: 1.6 }}>
               Para dudas sobre la postulación, escríbenos a:<br />
-              <a href="mailto:cotelcopueblopatrimonio2026@gmail.com" style={{ color: 'var(--color-ocean)', fontWeight: 800, textDecoration: 'none', display: 'inline-block', marginTop: '6px', fontSize: '14.5px', wordBreak: 'break-all' }}>cotelcopueblopatrimonio2026@gmail.com</a>
+              <a href="mailto:cotelcopueblospatrimonio2026@gmail.com" style={{ color: 'var(--color-ocean)', fontWeight: 800, textDecoration: 'none', display: 'inline-block', marginTop: '6px', fontSize: '14.5px', wordBreak: 'break-all' }}>cotelcopueblospatrimonio2026@gmail.com</a>
             </p>
           </div>
         </div>
