@@ -108,10 +108,10 @@ export function HeroParallax() {
           justifyContent: 'flex-start'
         }}
       >
-        <div ref={textRef} style={{ backgroundColor: 'rgba(253, 251, 247, 0.85)', padding: '40px', borderRadius: '24px', backdropFilter: 'blur(10px)', border: '2px solid rgba(255, 255, 255, 0.5)' }}>
+        <div ref={textRef} style={{ backgroundColor: 'rgba(253, 251, 247, 0.85)', padding: 'clamp(20px, 5vw, 40px)', borderRadius: '24px', backdropFilter: 'blur(10px)', border: '2px solid rgba(255, 255, 255, 0.5)' }}>
           <h1 style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: '4.2rem',
+            fontSize: 'clamp(2.5rem, 8vw, 4.2rem)',
             fontWeight: 900,
             color: '#D92525', // Rojo vibrante en vez del verde oscuro y triste
             lineHeight: 1.15,
@@ -124,7 +124,7 @@ export function HeroParallax() {
           </h1>
           <p style={{
             fontFamily: "'Outfit', sans-serif",
-            fontSize: '18px',
+            fontSize: 'clamp(15px, 4vw, 18px)',
             color: '#1E4C33', // Verde esmeralda oscuro
             marginTop: '10px',
             maxWidth: '500px',

@@ -1597,6 +1597,11 @@ h1, h2, h3, h4, .font-display {
 
 /* ═══ MOBILE RESPONSIVE FIXES ═══ */
 @media (max-width: 768px) {
+  .nav-brand {
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+  }
+  
   /* Prevent header text from expanding beyond screen */
   .nav-brand-text {
     white-space: normal !important;

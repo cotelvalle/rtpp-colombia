@@ -62,11 +62,11 @@ export const MapaSocioPatrimonio: React.FC = () => {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
         gap: '30px',
         alignItems: 'start',
         backgroundColor: 'var(--color-surface)',
-        padding: '24px',
+        padding: 'clamp(16px, 4vw, 24px)',
         borderRadius: '16px',
         border: '1.5px solid var(--color-border)',
         boxShadow: '0 8px 30px rgba(0,0,0,0.06)',
