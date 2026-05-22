@@ -110,8 +110,8 @@ function App() {
             <section className="hero-stats-grid">
               <div className="hero-stat-card"><span className="hero-stat-val">18</span><span className="hero-stat-lbl">Municipios de la Red</span></div>
               <div className="hero-stat-card"><span className="hero-stat-val">54</span><span className="hero-stat-lbl">Experiencias Beneficiadas</span></div>
-              <div className="hero-stat-card"><span className="hero-stat-val">Hasta $5M</span><span className="hero-stat-lbl">Apoyo por Experiencia</span></div>
-              <div className="hero-stat-card"><span className="hero-stat-val">$270M</span><span className="hero-stat-lbl">Fondo Total</span></div>
+              <div className="hero-stat-card"><span className="hero-stat-val">Hasta $5M COP</span><span className="hero-stat-lbl">Apoyo por Experiencia</span></div>
+              <div className="hero-stat-card"><span className="hero-stat-val">$270M COP</span><span className="hero-stat-lbl">Fondo Total</span></div>
             </section>
 
             {/* ═══ JUSTIFICACIÓN DEL PROYECTO — Sacada de los TDR ═══ */}

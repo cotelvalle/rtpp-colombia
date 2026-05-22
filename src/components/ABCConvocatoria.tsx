@@ -454,7 +454,7 @@ export const ABCConvocatoria: React.FC = () => {
         {/* Rubros de Presupuesto */}
         <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1px solid var(--color-border)', padding: '30px', boxShadow: 'var(--shadow-md)' }}>
           <h4 style={{ fontFamily: "'Playfair Display', serif", fontSize: '22px', color: 'var(--color-ink)', fontWeight: 900, marginBottom: '20px' }}>
-            Activos Financiables (Hasta 5MM)
+            Activos Financiables (Hasta $5M COP)
           </h4>
           
           <div style={{ marginBottom: '25px' }}>
