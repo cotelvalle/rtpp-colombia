@@ -146,7 +146,7 @@ function App() {
                   Proceso de selección
                 </span>
                 <p style={{ margin: 0, fontSize: '14px', color: 'var(--color-ink)', lineHeight: '1.6' }}>
-                  En la fase inicial de preinscripción se realizará una preselección de <strong>hasta diez (10) experiencias candidatas por municipio</strong>. Posteriormente, el equipo de <strong>COTELCO Capítulo Valle del Cauca</strong>, como operador del proyecto, se comunicará directamente con los representantes de las experiencias preseleccionadas para programar la validación y el diagnóstico en campo.
+                  El proceso recibirá todas las postulaciones sin límite inicial. Tras un filtro documental y técnico, se preseleccionarán hasta <strong>diez (10) experiencias</strong> por municipio, de las cuales <strong>cinco (5) quedarán preclasificadas</strong> para recibir una visita técnica en campo por parte del equipo de COTELCO Valle del Cauca. Tras las visitas, se elegirán las <strong>tres (3) experiencias beneficiarias definitivas</strong> por municipio. <br/><br/><strong>Para conocer el detalle exacto del proceso, por favor revisa la sección del ABC de la Convocatoria más abajo.</strong>
                 </p>
               </div>
             </div>
