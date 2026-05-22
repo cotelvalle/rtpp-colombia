@@ -248,19 +248,6 @@ export const MapaSocioPatrimonio: React.FC = () => {
                 </p>
               </div>
 
-              {/* Nota oficial */}
-              <div style={{ 
-                marginTop: '30px', 
-                backgroundColor: '#F0FDF4', 
-                border: '1px solid #BBF7D0', 
-                borderRadius: '8px', 
-                padding: '16px',
-                fontSize: '13px',
-                color: '#166534',
-                lineHeight: '1.5'
-              }}>
-                <strong>📌 Proceso de Selección:</strong> Hasta 10 experiencias turísticas de <strong>{selectedTown.name}</strong> serán preseleccionadas en la fase inicial. Posteriormente, el equipo de COTELCO se comunicará.
-              </div>
             </div>
           ) : (
             <div style={{ textAlign: 'center', padding: '80px 20px', color: '#94A3B8' }}>
