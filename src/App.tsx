@@ -299,33 +299,31 @@ function App() {
         
         <div className="footer-legal" style={{ maxWidth: '1200px', margin: '50px auto 0 auto', borderTop: '1px solid var(--color-border)', paddingTop: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '30px' }}>
           
-          {/* Logos Entidades */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '60px' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
-              <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--color-ink-light)', fontWeight: 700 }}>Financiador</span>
-              <img src="/logos/fontur.png" alt="FONTUR" style={{ height: '70px', objectFit: 'contain' }} />
+          {/* Bloque Central de Logos */}
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '30px' }}>
+            {/* FONTUR y COTELCO */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '60px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+                <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--color-ink-light)', fontWeight: 700 }}>Financiador</span>
+                <img src="/logos/fontur.png" alt="FONTUR" style={{ height: '65px', objectFit: 'contain' }} />
+              </div>
+              
+              <div style={{ width: '1px', height: '50px', backgroundColor: 'var(--color-border)', display: 'block' }}></div>
+              
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+                <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--color-ink-light)', fontWeight: 700 }}>Operador</span>
+                <img src="/logos/cotelvalle.png" alt="COTELCO Capítulo Valle del Cauca" style={{ height: '65px', objectFit: 'contain' }} />
+              </div>
             </div>
-            
-            <div style={{ width: '1px', height: '60px', backgroundColor: 'var(--color-border)', display: 'block' }}></div>
-            
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
-              <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--color-ink-light)', fontWeight: 700 }}>Operador</span>
-              <img src="/logos/cotelvalle.png" alt="COTELCO Capítulo Valle del Cauca" style={{ height: '70px', objectFit: 'contain' }} />
+
+            {/* Logo País de la Belleza (Más pequeño e integrado) */}
+            <div className="footer-logos-co" style={{ opacity: 0.85, mixBlendMode: 'multiply' }}>
+              <img src="/logos/pais_belleza.png" alt="Colombia el País de la Belleza" style={{ height: '42px', objectFit: 'contain', filter: 'contrast(1.05)' }} />
             </div>
           </div>
 
-          <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--color-ink-light)', lineHeight: 1.6 }}>
+          <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--color-ink-light)', lineHeight: 1.6, marginTop: '10px' }}>
             <p style={{ margin: 0 }}>© {new Date().getFullYear()} Todos los derechos reservados. Sitio web diseñado para el contrato FNTCE-730-2025.</p>
-          </div>
-
-          {/* Logo País de la Belleza (Integrado estéticamente) */}
-          <div className="footer-logos-co" style={{ 
-            opacity: 0.85, 
-            mixBlendMode: 'multiply', 
-            marginTop: '10px',
-            transform: 'scale(0.95)'
-          }}>
-            <img src="/logos/pais_belleza.png" alt="Colombia el País de la Belleza" style={{ height: '70px', objectFit: 'contain', filter: 'contrast(1.05)' }} />
           </div>
 
         </div>
