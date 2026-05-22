@@ -479,6 +479,13 @@ export const ABCConvocatoria: React.FC = () => {
             </ul>
           </div>
 
+          {/* Nota Aclaratoria */}
+          <div style={{ marginTop: '24px', padding: '14px 18px', backgroundColor: 'rgba(217, 119, 6, 0.08)', borderRadius: '12px', borderLeft: '4px solid var(--color-mustard)' }}>
+            <p style={{ margin: 0, fontSize: '13px', color: 'var(--color-ink-light)', lineHeight: '1.5' }}>
+              <strong style={{ color: '#B45309' }}>Nota importante:</strong> Los activos detallados anteriormente son de carácter ilustrativo e indicativo. La aprobación final de cualquier dotación, rubro o equipo estará sujeta a los cambios, disposiciones oficiales y políticas de FONTUR respecto a los rubros financiables y no financiables de la convocatoria.
+            </p>
+          </div>
+
         </div>
 
       </div>
