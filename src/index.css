@@ -392,6 +392,23 @@ h1, h2, h3, h4, .font-display {
   flex-shrink: 0;
 }
 
+.nav-logos {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-logo-img {
+  height: 38px;
+  object-fit: contain;
+}
+
+.nav-logo-divider {
+  width: 1.5px;
+  height: 30px;
+  background-color: var(--color-border);
+}
+
 .nav-brand-text {
   font-family: 'Playfair Display', serif;
   font-size: 16px;
@@ -1600,6 +1617,18 @@ h1, h2, h3, h4, .font-display {
   .nav-brand {
     flex-shrink: 1 !important;
     min-width: 0 !important;
+  }
+  
+  .nav-logos {
+    gap: 6px;
+  }
+  
+  .nav-logo-img {
+    height: 18px;
+  }
+  
+  .nav-logo-divider {
+    height: 16px;
   }
   
   /* Prevent header text from expanding beyond screen */

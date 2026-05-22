@@ -26,9 +26,13 @@ function App() {
       <nav className="sticky-menu-bar">
         <div className="menu-container">
           <div className="nav-brand" onClick={() => navigateTo('presentacion')} style={{ cursor: 'pointer' }}>
-            <span className="nav-brand-text" style={{ fontSize: '12px', letterSpacing: '0.05em', color: 'var(--color-ink-light)' }}>
-              CONVOCATORIA PÚBLICA • CONTRATO FNTCE-730-2025
-            </span>
+            <div className="nav-logos">
+              <img src={`${import.meta.env.BASE_URL}logos/fontur.png`} alt="Fontur" className="nav-logo-img" />
+              <div className="nav-logo-divider"></div>
+              <img src={`${import.meta.env.BASE_URL}logos/logo-red-pueblos.png`} alt="Red Pueblos Patrimonio" className="nav-logo-img" />
+              <div className="nav-logo-divider"></div>
+              <img src={`${import.meta.env.BASE_URL}logos/cotelvalle.png`} alt="Cotelco Valle" className="nav-logo-img" />
+            </div>
           </div>
 
           {/* Hamburger para móvil */}
