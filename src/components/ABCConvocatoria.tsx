@@ -1,8 +1,5 @@
 import React from 'react';
 import {
-  ActivosIcon,
-  ProhibidoIcon,
-  PresupuestoIcon,
   ArtisanWelcome,
   JeepWillysIcon,
   ColonialHouseIcon,

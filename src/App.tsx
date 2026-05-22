@@ -1,40 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ABCConvocatoria } from './components/ABCConvocatoria';
 import { MapaSocioPatrimonio } from './components/MapaSocioPatrimonio';
 import { GlosarioTDR } from './components/GlosarioTDR';
 import { TownIcon } from './components/SVGIllustrations';
 import { HeroParallax } from './components/HeroParallax';
 import {
-  InfoIcon,
-  MapPinIcon,
   FileIcon,
   DownloadIcon,
   ExternalLinkIcon
 } from './components/SVGIcons';
-
-/* Mini escudo decorativo para la marca del navbar */
-const EscudoMini: React.FC = () => (
-  <svg viewBox="0 0 32 38" width="28" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16 1C6 4 2 6 2 10C2 22 16 36 16 36C16 36 30 22 30 10C30 6 26 4 16 1Z"
-          fill="var(--color-forest)" stroke="var(--color-mustard)" strokeWidth="1.5"/>
-    <path d="M16 6C10 8 7 9.5 7 12C7 18 16 28 16 28C16 28 25 18 25 12C25 9.5 22 8 16 6Z"
-          fill="var(--color-mustard)" opacity="0.9"/>
-    <circle cx="16" cy="14" r="3.5" fill="var(--color-forest)"/>
-  </svg>
-);
-
-/* Escudo grande para el header institucional */
-const EscudoColombia: React.FC = () => (
-  <svg viewBox="0 0 100 100" width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="50" cy="50" r="46" stroke="var(--color-mustard)" strokeWidth="1.2" strokeDasharray="3 3" />
-    <path d="M15,25 C15,15 50,12 50,12 C50,12 85,15 85,25 C85,62 50,88 50,88 C50,88 15,62 15,25 Z"
-          fill="#003189" stroke="var(--color-mustard)" strokeWidth="2" strokeLinejoin="round"/>
-    <path d="M17,25 C17,20.5 50,17.5 50,17.5 C50,17.5 83,20.5 83,25 C83,38 72,50 50,60 C28,50 17,38 17,25 Z" fill="#FFC72C" />
-    <path d="M20,38 C20,35 50,33 50,33 C50,33 80,35 80,38 C80,48 70,58 50,68 C30,58 20,48 20,38 Z" fill="#003189" />
-    <path d="M24,50 C24,48 50,46 50,46 C50,46 76,48 76,50 C76,58 66,68 50,78 C34,68 24,58 24,50 Z" fill="#DA291C" />
-    <path d="M50,4 C45,4 42,7 42,10 C44,10 46,8 50,8 C54,8 56,10 58,10 C58,7 55,4 50,4 Z" fill="#E2E8F0" stroke="#2B2B2B" strokeWidth="1" />
-  </svg>
-);
 
 function App() {
   const [activeTab, setActiveTab] = useState<'presentacion' | 'abc' | 'glosario' | 'inscripcion'>('presentacion');

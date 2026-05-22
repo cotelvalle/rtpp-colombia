@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from 'react-simple-maps';
+import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
 import { TownIcon } from './SVGIllustrations';
 
 // Usamos el TopoJSON global confiable desde un CDN
@@ -149,7 +149,7 @@ export const MapaSocioPatrimonio: React.FC = () => {
                   onClick={() => setSelectedTown(p)}
                   onMouseEnter={() => setHoveredTown(p)}
                   onMouseLeave={() => setHoveredTown(null)}
-                  style={{ cursor: "pointer" }}
+                  style={{ }}
                 >
                   <circle 
                     r={active ? 7 : 5} 
