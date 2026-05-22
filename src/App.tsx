@@ -93,15 +93,15 @@ function App() {
               <div className="polaroid-gallery">
                 <div className="polaroid-card" style={{ transform: 'rotate(-7deg) translate(-50px, -20px)', zIndex: 3 }}>
                   <div className="polaroid-image-placeholder"><TownIcon vocab="arquitectura" color="#FFEDD5" /></div>
-                  <div className="polaroid-caption">Barichara, SAN</div>
+                  <div className="polaroid-caption">Barichara, Santander</div>
                 </div>
                 <div className="polaroid-card" style={{ transform: 'rotate(5deg) translate(40px, -40px)', zIndex: 4 }}>
                   <div className="polaroid-image-placeholder"><TownIcon vocab="artesania" color="#FAE8FF" /></div>
-                  <div className="polaroid-caption">Mompox, BOL</div>
+                  <div className="polaroid-caption">Mompox, Bolívar</div>
                 </div>
                 <div className="polaroid-card" style={{ transform: 'rotate(-3deg) translate(-10px, 60px)', zIndex: 5 }}>
                   <div className="polaroid-image-placeholder"><TownIcon vocab="cafetera" color="#DCFCE7" /></div>
-                  <div className="polaroid-caption">Aguadas, CAL</div>
+                  <div className="polaroid-caption">Aguadas, Caldas</div>
                 </div>
               </div>
             </section>
