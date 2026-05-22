@@ -284,7 +284,6 @@ function App() {
             <ul className="footer-links" style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
               <li><a href="https://www.mincit.gov.co" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-ink)', textDecoration: 'none', fontSize: '14px', fontWeight: 600 }}>Ministerio de Comercio, Industria y Turismo</a></li>
               <li><a href="https://fontur.com.co" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-ink)', textDecoration: 'none', fontSize: '14px', fontWeight: 600 }}>Fondo Nacional de Turismo - FONTUR</a></li>
-              <li><a href="https://cotelco.org" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-ink)', textDecoration: 'none', fontSize: '14px', fontWeight: 600 }}>COTELCO Nacional</a></li>
             </ul>
           </div>
           <div className="footer-section">
@@ -316,7 +315,7 @@ function App() {
           </div>
 
           <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--color-ink-light)', lineHeight: 1.6 }}>
-            <p style={{ margin: '0 0 4px 0' }}>© {new Date().getFullYear()} Red Turística de Pueblos Patrimonio.</p>
+            <p style={{ margin: '0 0 4px 0' }}>© {new Date().getFullYear()} Todos los derechos reservados. Sitio web diseñado para el contrato FNTCE-730-2025.</p>
             <p style={{ margin: 0 }}>Cumplimiento Ley 2345 de 2023 — Manual de Identidad Visual Entidades del Estado.</p>
           </div>
 
