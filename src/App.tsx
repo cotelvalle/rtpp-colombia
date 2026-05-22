@@ -315,13 +315,17 @@ function App() {
           </div>
 
           <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--color-ink-light)', lineHeight: 1.6 }}>
-            <p style={{ margin: '0 0 4px 0' }}>© {new Date().getFullYear()} Todos los derechos reservados. Sitio web diseñado para el contrato FNTCE-730-2025.</p>
-            <p style={{ margin: 0 }}>Cumplimiento Ley 2345 de 2023 — Manual de Identidad Visual Entidades del Estado.</p>
+            <p style={{ margin: 0 }}>© {new Date().getFullYear()} Todos los derechos reservados. Sitio web diseñado para el contrato FNTCE-730-2025.</p>
           </div>
 
-          {/* Logo País de la Belleza */}
-          <div className="footer-logos-co">
-            <img src="/logos/pais_belleza.png" alt="Colombia el País de la Belleza" style={{ height: '80px', objectFit: 'contain' }} />
+          {/* Logo País de la Belleza (Integrado estéticamente) */}
+          <div className="footer-logos-co" style={{ 
+            opacity: 0.85, 
+            mixBlendMode: 'multiply', 
+            marginTop: '10px',
+            transform: 'scale(0.95)'
+          }}>
+            <img src="/logos/pais_belleza.png" alt="Colombia el País de la Belleza" style={{ height: '70px', objectFit: 'contain', filter: 'contrast(1.05)' }} />
           </div>
 
         </div>
