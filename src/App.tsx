@@ -298,16 +298,33 @@ function App() {
           </div>
         </div>
         
-        <div className="footer-legal" style={{ maxWidth: '1200px', margin: '50px auto 0 auto', borderTop: '1px solid var(--color-border)', paddingTop: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
-          <div className="footer-logos-co">
-            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: '20px', fontWeight: 900, color: 'var(--color-terracotta)', letterSpacing: '0.02em' }}>
-              COLOMBIA <span style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 500, fontSize: '15px', letterSpacing: '0.12em', color: 'var(--color-mustard)' }}>el país de la belleza</span>
-            </span>
+        <div className="footer-legal" style={{ maxWidth: '1200px', margin: '50px auto 0 auto', borderTop: '1px solid var(--color-border)', paddingTop: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '30px' }}>
+          
+          {/* Logos Entidades */}
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '60px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+              <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--color-ink-light)', fontWeight: 700 }}>Financiador</span>
+              <img src="/logos/fontur.png" alt="FONTUR" style={{ height: '70px', objectFit: 'contain' }} />
+            </div>
+            
+            <div style={{ width: '1px', height: '60px', backgroundColor: 'var(--color-border)', display: 'block' }}></div>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+              <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--color-ink-light)', fontWeight: 700 }}>Operador</span>
+              <img src="/logos/cotelvalle.png" alt="COTELCO Capítulo Valle del Cauca" style={{ height: '70px', objectFit: 'contain' }} />
+            </div>
           </div>
+
           <div style={{ textAlign: 'center', fontSize: '12px', color: 'var(--color-ink-light)', lineHeight: 1.6 }}>
-            <p style={{ margin: '0 0 4px 0' }}>© {new Date().getFullYear()} Red Turística de Pueblos Patrimonio. Operado por COTELCO Valle del Cauca.</p>
+            <p style={{ margin: '0 0 4px 0' }}>© {new Date().getFullYear()} Red Turística de Pueblos Patrimonio.</p>
             <p style={{ margin: 0 }}>Cumplimiento Ley 2345 de 2023 — Manual de Identidad Visual Entidades del Estado.</p>
           </div>
+
+          {/* Logo País de la Belleza */}
+          <div className="footer-logos-co">
+            <img src="/logos/pais_belleza.png" alt="Colombia el País de la Belleza" style={{ height: '80px', objectFit: 'contain' }} />
+          </div>
+
         </div>
       </footer>
     </>
