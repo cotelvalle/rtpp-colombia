@@ -282,6 +282,7 @@ function App() {
               Enlaces Institucionales
             </h3>
             <ul className="footer-links" style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <li><a href="https://redturisticadepueblospatrimonio.com.co" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-ink)', textDecoration: 'none', fontSize: '14px', fontWeight: 600 }}>Red Turística de Pueblos Patrimonio</a></li>
               <li><a href="https://www.mincit.gov.co" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-ink)', textDecoration: 'none', fontSize: '14px', fontWeight: 600 }}>Ministerio de Comercio, Industria y Turismo</a></li>
               <li><a href="https://fontur.com.co" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-ink)', textDecoration: 'none', fontSize: '14px', fontWeight: 600 }}>Fondo Nacional de Turismo - FONTUR</a></li>
             </ul>
@@ -292,7 +293,7 @@ function App() {
             </h3>
             <p style={{ color: 'var(--color-ink)', fontSize: '14px', lineHeight: 1.6 }}>
               Para dudas sobre la postulación, escríbenos a:<br />
-              <a href="mailto:idtcultur@gmail.com" style={{ color: 'var(--color-ocean)', fontWeight: 800, textDecoration: 'none', display: 'inline-block', marginTop: '6px', fontSize: '16px' }}>idtcultur@gmail.com</a>
+              <a href="mailto:cotelcopueblopatrimonio2026@gmail.com" style={{ color: 'var(--color-ocean)', fontWeight: 800, textDecoration: 'none', display: 'inline-block', marginTop: '6px', fontSize: '14.5px', wordBreak: 'break-all' }}>cotelcopueblopatrimonio2026@gmail.com</a>
             </p>
           </div>
         </div>
