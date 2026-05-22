@@ -18,9 +18,9 @@ export const ABCConvocatoria: React.FC = () => {
       color: 'var(--color-ocean)',
       desc: 'El equipo técnico revisa que todos los documentos cargados en la postulación cumplan estrictamente los requisitos legales. Si existen errores menores, se notificará al correo oficial del postulante.',
       details: [
-        'Se reciben hasta diez (10) postulaciones por cada municipio.',
+        'Se reciben todas las postulaciones a las que haya lugar (sin límite inicial).',
         'Plazo de subsanación único de tres (3) días hábiles.',
-        'Solo pasan a la Fase 2 las propuestas en estado "Habilitado".'
+        'De las propuestas habilitadas, se preseleccionan hasta diez (10) experiencias por municipio.'
       ],
       date: 'Apertura: 1 de Junio de 2026'
     },
@@ -30,7 +30,7 @@ export const ABCConvocatoria: React.FC = () => {
       subtitle: 'Evaluación de propuesta sobre 100 puntos',
       icon: <WeavingLoomIcon size={60} />,
       color: 'var(--color-mustard)',
-      desc: 'Las propuestas habilitadas se califican según la Matriz Técnica Oficial que evalúa pertinencia, impacto y salvaguarda cultural. Las cinco (5) propuestas con mejor puntaje que pasen el filtro quedarán preclasificadas.',
+      desc: 'Las hasta diez (10) propuestas preseleccionadas por municipio se califican según la Matriz Técnica Oficial que evalúa pertinencia, impacto y salvaguarda cultural. Las cinco (5) propuestas con mejor puntaje quedarán preclasificadas.',
       details: [
         'Puntaje máximo de 100 puntos.',
         'Quedan preclasificadas las cinco (5) mejores experiencias por cada municipio.',
