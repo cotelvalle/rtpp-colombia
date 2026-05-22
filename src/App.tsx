@@ -32,6 +32,8 @@ function App() {
               <img src={`${import.meta.env.BASE_URL}logos/logo-red-pueblos.png`} alt="Red Pueblos Patrimonio" className="nav-logo-img" />
               <div className="nav-logo-divider"></div>
               <img src={`${import.meta.env.BASE_URL}logos/cotelvalle.png`} alt="Cotelco Valle" className="nav-logo-img" />
+              <div className="nav-logo-divider hide-on-mobile"></div>
+              <span className="nav-contract-text hide-on-mobile">CONTRATO FNTCE-730-2025</span>
             </div>
           </div>
 
