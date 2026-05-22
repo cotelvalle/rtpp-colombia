@@ -65,7 +65,7 @@ export function HeroParallax() {
       {/* Capa Fondo: Vector Tropical Vibrante */}
       <img
         ref={bgRef}
-        src="/vector_bg.png"
+        src={`${import.meta.env.BASE_URL}vector_bg.png`}
         alt="Fondo Festivo Colombia"
         style={{
           position: 'absolute',
@@ -83,7 +83,7 @@ export function HeroParallax() {
       {/* Capa Frente: Personaje Palenquera Vectorial */}
       <img
         ref={midRef}
-        src="/vector_fg_transparent.png"
+        src={`${import.meta.env.BASE_URL}vector_fg_transparent.png`}
         alt="Mujer Afrocolombiana Festiva"
         style={{
           position: 'absolute',

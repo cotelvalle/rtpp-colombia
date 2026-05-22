@@ -280,20 +280,20 @@ function App() {
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '60px' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
                 <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--color-ink-light)', fontWeight: 700 }}>Financiador</span>
-                <img src="/logos/fontur.png" alt="FONTUR" style={{ height: '65px', objectFit: 'contain' }} />
+                <img src={`${import.meta.env.BASE_URL}logos/fontur.png`} alt="FONTUR" style={{ height: '65px', objectFit: 'contain' }} />
               </div>
               
               <div style={{ width: '1px', height: '50px', backgroundColor: 'var(--color-border)', display: 'block' }}></div>
               
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
                 <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--color-ink-light)', fontWeight: 700 }}>Operador</span>
-                <img src="/logos/cotelvalle.png" alt="COTELCO Capítulo Valle del Cauca" style={{ height: '65px', objectFit: 'contain' }} />
+                <img src={`${import.meta.env.BASE_URL}logos/cotelvalle.png`} alt="COTELCO Capítulo Valle del Cauca" style={{ height: '65px', objectFit: 'contain' }} />
               </div>
             </div>
 
             {/* Logo País de la Belleza (Más pequeño e integrado) */}
             <div className="footer-logos-co" style={{ opacity: 0.85, mixBlendMode: 'multiply' }}>
-              <img src="/logos/pais_belleza.png" alt="Colombia el País de la Belleza" style={{ height: '42px', objectFit: 'contain', filter: 'contrast(1.05)' }} />
+              <img src={`${import.meta.env.BASE_URL}logos/pais_belleza.png`} alt="Colombia el País de la Belleza" style={{ height: '42px', objectFit: 'contain', filter: 'contrast(1.05)' }} />
             </div>
           </div>
 
