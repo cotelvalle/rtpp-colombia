@@ -155,7 +155,7 @@ function App() {
                   Proceso de selección
                 </span>
                 <p style={{ margin: 0, fontSize: '14px', color: 'var(--color-ink)', lineHeight: '1.6' }}>
-                  El proceso recibirá todas las postulaciones sin límite inicial. Tras un filtro documental y técnico, se preseleccionarán hasta <strong>diez (10) experiencias</strong> por municipio, de las cuales <strong>cinco (5) quedarán preclasificadas</strong> para recibir una visita técnica en campo por parte del equipo de COTELCO Valle del Cauca. Tras las visitas, se elegirán las <strong>tres (3) experiencias beneficiarias definitivas</strong> por municipio para recibir dotación, conforme a los Términos de referencia. <br/><br/><strong>Para conocer el detalle exacto del proceso, por favor revisa la sección del ABC de la Convocatoria.</strong>
+                  El proceso recibirá todas las postulaciones sin límite inicial. Tras un filtro documental y técnico, se preseleccionarán hasta <strong>diez (10) experiencias</strong> por municipio, de las cuales <strong>cinco (5) quedarán preclasificadas</strong> para recibir una visita técnica en campo por parte del equipo de COTELCO Valle del Cauca. Tras las visitas, se elegirán las <strong>tres (3) experiencias beneficiarias definitivas</strong> por municipio para recibir dotación, conforme a los Términos de Referencia. <br/><br/><strong>Para conocer el detalle exacto del proceso, por favor revisa la sección del ABC de la Convocatoria.</strong>
                 </p>
               </div>
             </div>
