@@ -27,10 +27,6 @@ function App() {
         <div className="menu-container">
           <div className="nav-brand" onClick={() => navigateTo('presentacion')} style={{ cursor: 'pointer' }}>
             <div className="nav-logos">
-              <img src={`${import.meta.env.BASE_URL}logos/fontur.png`} alt="Fontur" className="nav-logo-img" />
-              <div className="nav-logo-divider"></div>
-              <img src={`${import.meta.env.BASE_URL}logos/logo-red-pueblos.png`} alt="Red Pueblos Patrimonio" className="nav-logo-img" />
-              <div className="nav-logo-divider"></div>
               <img src={`${import.meta.env.BASE_URL}logos/cotelvalle.png`} alt="Cotelco Valle" className="nav-logo-img" />
               <div className="nav-logo-divider hide-on-mobile"></div>
               <span className="nav-contract-text hide-on-mobile">CONTRATO FNTCE-730-2025</span>
@@ -175,19 +171,7 @@ function App() {
               </div>
             </div>
 
-            <div style={{
-              backgroundColor: 'var(--color-forest-light)',
-              borderLeft: '4px solid var(--color-forest)',
-              borderRadius: '8px',
-              padding: '16px 20px',
-              marginBottom: '30px',
-              fontSize: '14px',
-              color: 'var(--color-forest)',
-              lineHeight: '1.5',
-              fontWeight: 600
-            }}>
-              Recuerda: Esta es la etapa de postulación inicial. Se preseleccionarán hasta 10 candidatos por municipio, y posteriormente el operador COTELCO Valle se comunicará de forma individual con los preseleccionados para agendar visitas técnicas.
-            </div>
+
 
             <div className="forms-downloads-layout">
               <div className="action-card">
@@ -200,12 +184,12 @@ function App() {
                   </p>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%' }}>
-                  <a href="https://forms.google.com/inscripcion-red-pueblos" target="_blank" rel="noopener noreferrer" className="action-btn" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '8px' }}>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSet310D0MPQ1yzP3AE4lj3RLBLQwSZVUl_zXl22YZiYELRfPw/viewform" target="_blank" rel="noopener noreferrer" className="action-btn" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '8px' }}>
                     Formulario 1: Inscripción Legal <ExternalLinkIcon size={16} />
                   </a>
-                  <a href="https://forms.google.com/caracterizacion-experiencias" target="_blank" rel="noopener noreferrer" className="action-btn secondary" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '8px' }}>
+                  {/* <a href="https://forms.google.com/caracterizacion-experiencias" target="_blank" rel="noopener noreferrer" className="action-btn secondary" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '8px' }}>
                     Formulario 2: Diagnóstico de Activos <ExternalLinkIcon size={16} />
-                  </a>
+                  </a> */}
                 </div>
               </div>
 
@@ -223,21 +207,21 @@ function App() {
                     <div className="download-info">
                       <FileIcon />
                       <div className="download-title-container">
-                        <span className="download-title">Términos de Referencia FNTCE-730-2025</span>
-                        <span className="download-meta">PDF • 2.4 MB • Versión Oficial</span>
+                        <span className="download-title">Términos de Referencia</span>
+                        <span className="download-meta">Versión Oficial</span>
                       </div>
                     </div>
-                    <a href="#download-pdf" className="download-btn">Descargar</a>
+                    <a href="https://docs.google.com/document/d/18RkQ1uCHPEPgsAYUkJQk6f4KE4Kg14Y9/edit?usp=sharing&ouid=109748186578696980793&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="download-btn">Descargar</a>
                   </div>
                   <div className="download-row">
                     <div className="download-info">
                       <FileIcon />
                       <div className="download-title-container">
-                        <span className="download-title">Modelo de Aval de la Alcaldía</span>
-                        <span className="download-meta">DOCX • 420 KB • Formato Obligatorio</span>
+                        <span className="download-title">Carta de compromiso</span>
+                        <span className="download-meta">Formato Obligatorio</span>
                       </div>
                     </div>
-                    <a href="#download-docx" className="download-btn">Descargar</a>
+                    <a href="https://docs.google.com/document/d/1v5EQGx34A4RQxH_X0_H9CIWpyyfRyTdynN_YnX5jwjM/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="download-btn">Descargar</a>
                   </div>
                 </div>
               </div>

@@ -345,51 +345,50 @@ export const ABCConvocatoria: React.FC = () => {
         <strong>Transversal para todos:</strong> Formulario de postulación (On-line), Carta de compromiso firmada y Anexos soporte opcionales (videos/portafolios, máx 10MB por archivo).
       </p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '25px', marginBottom: '60px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '25px', marginBottom: '60px' }}>
         
-        {/* Categoría 1: PST */}
+        {/* Tipo 1 */}
         <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1.5px solid var(--color-ocean)', padding: '25px', boxShadow: 'var(--shadow-sm)', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', backgroundColor: 'var(--color-ocean)' }}></div>
           <h4 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '17px', color: 'var(--color-ocean)', fontWeight: 800, marginBottom: '15px', lineHeight: '1.3' }}>
-            1. Prestadores Turísticos (con RNT)
+            Tipo 1. Prestadores de servicios turísticos (RNT)
           </h4>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px', color: 'var(--color-ink)' }}>
-            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-ocean)'}}>•</span> Certificado de Cámara de Comercio (Vigencia 2026).</li>
-            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-ocean)'}}>•</span> RNT Activo 2026.</li>
-            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-ocean)'}}>•</span> Cédula del representante legal.</li>
-            <li style={{ marginTop: '10px', padding: '12px', backgroundColor: '#F0F9FF', borderRadius: '8px', fontSize: '12.5px', border: '1px solid #BAE6FD' }}>
-              <strong style={{color: '#0369A1'}}>Si es Guía Profesional:</strong> Tarjeta Profesional, RNT Vigente, RUT y Certificado de Residencia expedido por autoridad.
-            </li>
-          </ul>
+          <p style={{ fontSize: '13.5px', color: 'var(--color-ink)', lineHeight: '1.5', margin: 0 }}>
+            Establecimientos o empresas formalmente registradas en el Registro Nacional de Turismo, como alojamientos, agencias de viajes, operadores turísticos, transporte turístico, parques temáticos, entre otros.
+          </p>
         </div>
 
-        {/* Categoría 2: Complementarios */}
+        {/* Tipo 2 */}
+        <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1.5px solid var(--color-forest)', padding: '25px', boxShadow: 'var(--shadow-sm)', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', backgroundColor: 'var(--color-forest)' }}></div>
+          <h4 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '17px', color: 'var(--color-forest)', fontWeight: 800, marginBottom: '15px', lineHeight: '1.3' }}>
+            Tipo 2. Guías de turismo
+          </h4>
+          <p style={{ fontSize: '13.5px', color: 'var(--color-ink)', lineHeight: '1.5', margin: 0 }}>
+            Personas naturales que prestan servicios de guía turística y cuentan con Registro Nacional de Turismo (RNT).
+          </p>
+        </div>
+
+        {/* Tipo 3 */}
         <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1.5px solid var(--color-mustard)', padding: '25px', boxShadow: 'var(--shadow-sm)', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', backgroundColor: 'var(--color-mustard)' }}></div>
-          <h4 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '17px', color: 'var(--color-mustard)', fontWeight: 800, marginBottom: '5px', lineHeight: '1.3' }}>
-            2. Formales Complementarios
+          <h4 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '17px', color: 'var(--color-mustard)', fontWeight: 800, marginBottom: '15px', lineHeight: '1.3' }}>
+            Tipo 3. Prestadores formales complementarios
           </h4>
-          <p style={{ fontSize: '12px', color: 'var(--color-ink-light)', marginBottom: '15px', fontWeight: 600 }}>Gastronomía, artesanías, agroturismo.</p>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px', color: 'var(--color-ink)' }}>
-            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-mustard)'}}>•</span> Certificado de Cámara de Comercio (Vigencia 2026).</li>
-            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-mustard)'}}>•</span> Cédula del representante legal.</li>
-          </ul>
+          <p style={{ fontSize: '13.5px', color: 'var(--color-ink)', lineHeight: '1.5', margin: 0 }}>
+            Actividades relacionadas con gastronomía, artesanías, productos con identidad regional, servicios agroturísticos y experiencias culturales vinculadas al turismo.
+          </p>
         </div>
 
-        {/* Categoría 3: Comunitarias */}
+        {/* Tipo 4 */}
         <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1.5px solid var(--color-terracotta)', padding: '25px', boxShadow: 'var(--shadow-sm)', position: 'relative', overflow: 'hidden' }}>
           <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', backgroundColor: 'var(--color-terracotta)' }}></div>
-          <h4 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '17px', color: 'var(--color-terracotta)', fontWeight: 800, marginBottom: '5px', lineHeight: '1.3' }}>
-            3. Étnicas y Comunitarias
+          <h4 style={{ fontFamily: "'Outfit', sans-serif", fontSize: '17px', color: 'var(--color-terracotta)', fontWeight: 800, marginBottom: '15px', lineHeight: '1.3' }}>
+            Tipo 4. Unidades productivas de organizaciones étnicas, sociales, culturales y/o comunitarias
           </h4>
-          <p style={{ fontSize: '12px', color: 'var(--color-ink-light)', marginBottom: '15px', fontWeight: 600 }}>Asociaciones, cabildos, fundaciones.</p>
-          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13.5px', color: 'var(--color-ink)' }}>
-            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-terracotta)'}}>•</span> Certificación de actividad productiva expedida por la entidad.</li>
-            <li style={{ display: 'flex', gap: '8px' }}><span style={{color: 'var(--color-terracotta)'}}>•</span> Cédula del representante legal (organización postulante).</li>
-            <li style={{ marginTop: '10px', padding: '12px', backgroundColor: '#FFF7ED', borderRadius: '8px', fontSize: '12.5px', border: '1px solid #FED7AA' }}>
-              <strong style={{color: '#C2410C'}}>Nota Importante:</strong> Solo será posible postular una (1) unidad productiva por entidad comunitaria.
-            </li>
-          </ul>
+          <p style={{ fontSize: '13.5px', color: 'var(--color-ink)', lineHeight: '1.5', margin: 0 }}>
+            Asociaciones, colectivos u organizaciones comunitarias con enfoque territorial, cultural, étnico o social.
+          </p>
         </div>
 
       </div>

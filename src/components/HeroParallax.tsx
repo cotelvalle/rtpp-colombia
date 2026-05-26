@@ -65,8 +65,8 @@ export function HeroParallax() {
       {/* Capa Fondo: Vector Tropical Vibrante */}
       <img
         ref={bgRef}
-        src={`${import.meta.env.BASE_URL}vector_bg.png`}
-        alt="Fondo Festivo Colombia"
+        src={`${import.meta.env.BASE_URL}villa_de_leyva.png`}
+        alt="Fondo Villa de Leyva"
         style={{
           position: 'absolute',
           top: '-10%',
@@ -77,22 +77,6 @@ export function HeroParallax() {
           mixBlendMode: 'multiply', // Fusión perfecta con el fondo crema
           opacity: 0.85,
           zIndex: 1
-        }}
-      />
-
-      {/* Capa Frente: Personaje Palenquera Vectorial */}
-      <img
-        ref={midRef}
-        src={`${import.meta.env.BASE_URL}vector_fg_transparent.png`}
-        alt="Mujer Afrocolombiana Festiva"
-        style={{
-          position: 'absolute',
-          bottom: '-5%',
-          right: '5%',
-          width: 'auto',
-          height: '95%',
-          objectFit: 'contain',
-          zIndex: 3
         }}
       />
 
