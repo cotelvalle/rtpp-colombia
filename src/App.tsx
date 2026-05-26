@@ -126,7 +126,7 @@ function App() {
                   El programa <strong>Red Turística de Pueblos Patrimonio (RTPP)</strong> es una apuesta clave para el turismo cultural en Colombia, destacando el inmenso valor histórico y arquitectónico de 18 municipios únicos. Teniendo en cuenta la importancia que ha tenido el programa para el desarrollo turístico del país, se considera necesario dar continuidad a la Red a partir de tres pilares estratégicos de fortalecimiento: <strong>articulación, competitividad y sostenibilidad</strong>. El trabajo articulado como red colaborativa, con principios de participación y corresponsabilidad de las partes interesadas, permitirá seguir fortaleciendo esta importante Red.
                 </p>
                 <p style={{ fontSize: '15px', color: 'var(--color-ink)', lineHeight: '1.75', textAlign: 'justify' }}>
-                  Por lo anterior, el presente proyecto <strong>FNTCE-730-2025</strong> vincula y materializa las siguientes actividades:
+                  Por lo anterior, el presente proyecto <strong>FNTCE-730-2025</strong> vincula y materializa las siguientes actividades, que esperan ser desarrolladas con las experiencias beneficiarias:
                 </p>
                 <ul style={{ fontSize: '15px', color: 'var(--color-ink)', lineHeight: '1.6', paddingLeft: '25px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   <li>Diseñar un portafolio de servicios, actividades y experiencias turísticas de los municipios que integran la Red Turística de Pueblos Patrimonio.</li>
