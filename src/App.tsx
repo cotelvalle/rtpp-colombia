@@ -123,11 +123,18 @@ function App() {
               </div>
               <div style={{ maxWidth: '820px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '18px' }}>
                 <p style={{ fontSize: '15px', color: 'var(--color-ink)', lineHeight: '1.75', textAlign: 'justify' }}>
-                  La Red Turística de Pueblos Patrimonio de Colombia, conformada por 18 municipios que han sido reconocidos por su valor histórico, arquitectónico y cultural, representa uno de los activos turísticos más importantes del país. Sin embargo, muchas de las experiencias turísticas que se desarrollan en estos territorios carecen de las condiciones técnicas, la infraestructura productiva y los estándares de calidad necesarios para competir en los mercados nacionales e internacionales, lo que limita su capacidad de generar ingresos sostenibles y preservar el patrimonio vivo que las sustenta.
+                  El programa <strong>Red Turística de Pueblos Patrimonio (RTPP)</strong> es una apuesta clave para el turismo cultural en Colombia, destacando el inmenso valor histórico y arquitectónico de 18 municipios únicos. Teniendo en cuenta la importancia que ha tenido el programa para el desarrollo turístico del país, se considera necesario dar continuidad a la Red a partir de tres pilares estratégicos de fortalecimiento: <strong>articulación, competitividad y sostenibilidad</strong>. El trabajo articulado como red colaborativa, con principios de participación y corresponsabilidad de las partes interesadas, permitirá seguir fortaleciendo esta importante Red.
                 </p>
                 <p style={{ fontSize: '15px', color: 'var(--color-ink)', lineHeight: '1.75', textAlign: 'justify' }}>
-                  En respuesta a esta necesidad, el Fondo Nacional de Turismo — FONTUR, a través del contrato FNTCE-730-2025, ha puesto en marcha un proceso de cofinanciación que no se limita a la entrega de dotaciones físicas: busca un fortalecimiento integral de las experiencias turísticas culturales, que incluye la caracterización en campo, el diagnóstico de necesidades, la dotación de maquinaria, herramientas o equipamiento, y la generación de capacidades para que artesanos, cocineros tradicionales, guías culturales y portadores de saberes ancestrales puedan elevar la calidad, la sostenibilidad y la competitividad de su oferta turística.
+                  Por lo anterior, el presente proyecto <strong>FNTCE-730-2025</strong> vincula y materializa las siguientes actividades:
                 </p>
+                <ul style={{ fontSize: '15px', color: 'var(--color-ink)', lineHeight: '1.6', paddingLeft: '25px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  <li>Diseñar un portafolio de servicios, actividades y experiencias turísticas de los municipios que integran la Red Turística de Pueblos Patrimonio.</li>
+                  <li>Realizar una jornada de validación de servicios y experiencias turísticas en cada uno de los 18 municipios que integran la Red Turística de Pueblos Patrimonio.</li>
+                  <li>Estructurar un documento que incluya las necesidades de dotación para la operación de las actividades, experiencias, productos y servicios turísticos identificados.</li>
+                  <li>Realizar la entrega de dotación a 54 actividades, experiencias, productos y/o servicios turísticos que aporten a los pilares de la sostenibilidad del turismo cultural.</li>
+                  <li>Realizar un encuentro de fortalecimiento empresarial y un encuentro de encadenamiento productivo para la RTPP.</li>
+                </ul>
               </div>
             </div>
 
@@ -148,7 +155,7 @@ function App() {
                   Proceso de selección
                 </span>
                 <p style={{ margin: 0, fontSize: '14px', color: 'var(--color-ink)', lineHeight: '1.6' }}>
-                  El proceso recibirá todas las postulaciones sin límite inicial. Tras un filtro documental y técnico, se preseleccionarán hasta <strong>diez (10) experiencias</strong> por municipio, de las cuales <strong>cinco (5) quedarán preclasificadas</strong> para recibir una visita técnica en campo por parte del equipo de COTELCO Valle del Cauca. Tras las visitas, se elegirán las <strong>tres (3) experiencias beneficiarias definitivas</strong> por municipio. <br/><br/><strong>Para conocer el detalle exacto del proceso, por favor revisa la sección del ABC de la Convocatoria más abajo.</strong>
+                  El proceso recibirá todas las postulaciones sin límite inicial. Tras un filtro documental y técnico, se preseleccionarán hasta <strong>diez (10) experiencias</strong> por municipio, de las cuales <strong>cinco (5) quedarán preclasificadas</strong> para recibir una visita técnica en campo por parte del equipo de COTELCO Valle del Cauca. Tras las visitas, se elegirán las <strong>tres (3) experiencias beneficiarias definitivas</strong> por municipio para recibir dotación, conforme a los Términos de referencia. <br/><br/><strong>Para conocer el detalle exacto del proceso, por favor revisa la sección del ABC de la Convocatoria.</strong>
                 </p>
               </div>
             </div>

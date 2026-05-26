@@ -93,26 +93,44 @@ export function HeroParallax() {
         }}
       >
         <div ref={textRef} style={{ backgroundColor: 'rgba(253, 251, 247, 0.85)', padding: 'clamp(20px, 5vw, 40px)', borderRadius: '24px', backdropFilter: 'blur(10px)', border: '2px solid rgba(255, 255, 255, 0.5)' }}>
+          <div style={{ marginBottom: '8px' }}>
+            <span style={{
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: 'clamp(14px, 3vw, 18px)',
+              fontWeight: 800,
+              textTransform: 'uppercase',
+              letterSpacing: '0.15em',
+              color: '#D92525',
+              display: 'inline-block',
+              marginBottom: '12px',
+              backgroundColor: 'rgba(217, 37, 37, 0.1)',
+              padding: '6px 12px',
+              borderRadius: '8px'
+            }}>
+              Convocatoria
+            </span>
+          </div>
           <h1 style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: 'clamp(2.5rem, 8vw, 4.2rem)',
+            fontSize: 'clamp(2.2rem, 6vw, 3.5rem)',
             fontWeight: 900,
-            color: '#D92525', // Rojo vibrante en vez del verde oscuro y triste
+            color: '#1E4C33', 
             lineHeight: 1.15,
-            maxWidth: '550px',
-            marginBottom: '10px'
+            maxWidth: '650px',
+            margin: '0 0 16px 0',
+            textWrap: 'balance'
           }}>
-            Convocatoria:<br />
             Red Turística de Pueblos Patrimonio de Colombia
           </h1>
           <p style={{
             fontFamily: "'Outfit', sans-serif",
-            fontSize: 'clamp(15px, 4vw, 18px)',
-            color: '#1E4C33', // Verde esmeralda oscuro
-            marginTop: '10px',
-            maxWidth: '500px',
-            fontWeight: 700,
-            lineHeight: 1.6
+            fontSize: 'clamp(16px, 3vw, 18px)',
+            color: '#475569', 
+            margin: 0,
+            fontWeight: 600,
+            lineHeight: 1.6,
+            borderLeft: '4px solid #D92525',
+            paddingLeft: '12px'
           }}>
             Contrato FNTCE-730-2025
           </p>
