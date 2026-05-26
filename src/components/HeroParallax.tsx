@@ -102,9 +102,8 @@ export function HeroParallax() {
             maxWidth: '550px',
             marginBottom: '10px'
           }}>
-            Celebramos<br />
-            nuestra riqueza<br />
-            cultural.
+            Convocatoria:<br />
+            Red Turística de Pueblos Patrimonio de Colombia
           </h1>
           <p style={{
             fontFamily: "'Outfit', sans-serif",
@@ -115,7 +114,7 @@ export function HeroParallax() {
             fontWeight: 700,
             lineHeight: 1.6
           }}>
-            Descubre la alegría y diversidad de los 18 Pueblos Patrimonio de Colombia. Un viaje por el País de la Belleza.
+            Contrato FNTCE-730-2025
           </p>
         </div>
       </div>
