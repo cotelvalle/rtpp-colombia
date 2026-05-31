@@ -176,7 +176,16 @@ function App() {
               </div>
             </div>
 
-
+            {/* Advisor de Descargo de Responsabilidad */}
+            <div style={{ backgroundColor: 'rgba(217, 119, 6, 0.1)', border: '1px solid var(--color-mustard)', borderRadius: '12px', padding: '20px', marginBottom: '30px', display: 'flex', gap: '15px', alignItems: 'flex-start' }}>
+              <span style={{ fontSize: '24px' }}>⚠️</span>
+              <div>
+                <h4 style={{ color: '#B45309', margin: '0 0 8px 0', fontSize: '16px', fontWeight: 800 }}>Importante: Responsabilidad del Postulante</h4>
+                <p style={{ color: 'var(--color-ink-light)', margin: 0, fontSize: '14px', lineHeight: '1.6' }}>
+                  Es <strong>responsabilidad exclusiva y obligatoria</strong> de cada postulante descargar, leer y comprender en su totalidad los Términos de Referencia (TDR) y los anexos oficiales antes de realizar su inscripción. La postulación implica la aceptación de todas las reglas y condiciones descritas en los documentos formales de la convocatoria.
+                </p>
+              </div>
+            </div>
 
             <div className="forms-downloads-layout">
               <div className="action-card">

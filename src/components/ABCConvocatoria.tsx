@@ -66,6 +66,7 @@ export const ABCConvocatoria: React.FC = () => {
         'Inclusión en el Portafolio Digital de la Red.',
         'Invitación a rueda comercial nacional.'
       ],
+      notice: 'La presentación de la postulación no genera obligación de asignación de recursos. La dotación está sujeta al proceso de evaluación, validación y selección final definido en la convocatoria.',
       date: 'Cierre del proyecto'
     }
   ];
@@ -406,7 +407,7 @@ export const ABCConvocatoria: React.FC = () => {
         Financiación y Calificación
       </h3>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '40px', marginBottom: '40px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '40px', marginBottom: '40px' }}>
         
         {/* Telar de Puntajes Visual */}
         <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1px solid var(--color-border)', padding: '30px', boxShadow: 'var(--shadow-md)' }}>
@@ -479,10 +480,14 @@ export const ABCConvocatoria: React.FC = () => {
             <h5 style={{ fontSize: '15px', color: 'var(--color-rose)', fontWeight: 800, marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
               <span style={{ fontSize: '18px' }}>❌</span> No se Financia
             </h5>
+            <p style={{ fontSize: '13.5px', color: 'var(--color-ink-light)', lineHeight: '1.5', marginBottom: '12px' }}>
+              Para la categoría asociada a dotaciones para la operación de actividades, experiencias, productos y servicios turísticos, se financiarán elementos cuya necesidad se encuentre asociada directamente con el turismo y en ningún caso:
+            </p>
             <ul style={{ paddingLeft: '18px', margin: 0, fontSize: '13.5px', color: 'var(--color-ink-light)', lineHeight: '1.5' }}>
-              <li style={{ marginBottom: '6px' }}><strong>Obras Civiles:</strong> Locativas de cemento, construcción o pavimentación.</li>
-              <li style={{ marginBottom: '6px' }}><strong>Costos Operativos:</strong> Arriendos, nóminas o pago de servicios públicos.</li>
-              <li style={{ marginBottom: '6px' }}><strong>Tecnología común:</strong> Celulares personales, consolas de sonido recreativas.</li>
+              <li style={{ marginBottom: '6px' }}><strong>Obras Civiles e Infraestructura:</strong> Terrenos, predios, adecuaciones locativas mayores, construcciones, baños o senderos pavimentados.</li>
+              <li style={{ marginBottom: '6px' }}><strong>Tecnología y Software:</strong> Equipos de cómputo de escritorio o portátiles de gama media/alta, licencias de software, aplicaciones pagas o suscripciones digitales.</li>
+              <li style={{ marginBottom: '6px' }}><strong>Transporte:</strong> Vehículos automotores, motocicletas, bicicletas eléctricas o cualquier medio de transporte.</li>
+              <li style={{ marginBottom: '6px' }}><strong>Gastos Operativos:</strong> Servicios públicos (energía, agua, internet, telefonía), impuestos, tasas, contribuciones parafiscales, ni nómina.</li>
             </ul>
           </div>
 
