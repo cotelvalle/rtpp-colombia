@@ -73,7 +73,7 @@ function App() {
                   Fortalece tu experiencia turística cultural
                 </h1>
                 <p style={{ fontSize: '15.5px', color: 'var(--color-ink-light)', lineHeight: '1.65' }}>
-                  Cofinanciación de hasta <strong style={{ color: 'var(--color-mustard)' }}>$5.000.000 COP</strong> en activos productivos, acompañamiento técnico y fortalecimiento de capacidades para experiencias turísticas de los 18 municipios de la Red de Pueblos Patrimonio.
+                  Cofinanciación en activos productivos, acompañamiento técnico y fortalecimiento de capacidades para experiencias turísticas de los 18 municipios de la Red de Pueblos Patrimonio.
                 </p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '4px' }}>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', backgroundColor: 'var(--color-forest-light)', color: 'var(--color-forest)', padding: '6px 14px', borderRadius: '6px', fontSize: '13px', fontWeight: 700, border: '1px solid rgba(45, 74, 62, 0.15)' }}>
@@ -112,8 +112,6 @@ function App() {
             <section className="hero-stats-grid">
               <div className="hero-stat-card"><span className="hero-stat-val">18</span><span className="hero-stat-lbl">Municipios de la Red</span></div>
               <div className="hero-stat-card"><span className="hero-stat-val">54</span><span className="hero-stat-lbl">Experiencias Beneficiadas</span></div>
-              <div className="hero-stat-card"><span className="hero-stat-val">Hasta $5M COP</span><span className="hero-stat-lbl">Apoyo por Experiencia</span></div>
-              <div className="hero-stat-card"><span className="hero-stat-val">$270M COP</span><span className="hero-stat-lbl">Fondo Total</span></div>
             </section>
 
             {/* ═══ JUSTIFICACIÓN DEL PROYECTO — Sacada de los TDR ═══ */}
@@ -184,19 +182,16 @@ function App() {
               <div className="action-card">
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '20px', marginBottom: '12px', color: 'var(--color-forest)', fontFamily: "'Playfair Display', serif" }}>
-                    <ExternalLinkIcon /> 1. Cuestionarios Obligatorios
+                    <ExternalLinkIcon /> 1. Cuestionario Obligatorio
                   </h3>
                   <p style={{ fontSize: '14px', color: 'var(--color-ink-light)', lineHeight: '1.6' }}>
-                    Para iniciar el proceso de selección formal, es indispensable diligenciar los dos formularios de registro oficiales.
+                    Para iniciar el proceso de selección formal, es indispensable diligenciar el formulario de registro oficial.
                   </p>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%' }}>
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSet310D0MPQ1yzP3AE4lj3RLBLQwSZVUl_zXl22YZiYELRfPw/viewform" target="_blank" rel="noopener noreferrer" className="action-btn" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '8px' }}>
-                    Formulario 1: Inscripción Legal <ExternalLinkIcon size={16} />
+                    Formulario Único de Inscripción <ExternalLinkIcon size={16} />
                   </a>
-                  {/* <a href="https://forms.google.com/caracterizacion-experiencias" target="_blank" rel="noopener noreferrer" className="action-btn secondary" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '8px' }}>
-                    Formulario 2: Diagnóstico de Activos <ExternalLinkIcon size={16} />
-                  </a> */}
                 </div>
               </div>
 

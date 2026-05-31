@@ -29,9 +29,9 @@
   "experiencesCall": {
     "targetExperiences": 54,
     "maxPerMunicipality": 3,
-    "endowmentCapCop": 5000000,
-    "endowmentCapText": "Hasta $5.000.000 COP en activos productivos por experiencia",
-    "totalBudgetCop": 270000000,
+    "endowmentCapCop": null,
+    "endowmentCapText": "Cofinanciación en activos productivos por experiencia",
+    "totalBudgetCop": null,
     "nonEligibleExpenses": [
       "Equipos de cómputo de escritorio o portátiles de gama media/alta.",
       "Licencias de software, aplicaciones pagas o suscripciones digitales.",

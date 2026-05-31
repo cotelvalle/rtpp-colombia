@@ -62,7 +62,7 @@ export const ABCConvocatoria: React.FC = () => {
       color: 'var(--color-forest)',
       desc: 'El Comité Técnico formaliza la lista de hasta tres (3) experiencias turísticas seleccionadas por cada uno de los 18 municipios (máximo 54 a nivel nacional).',
       details: [
-        'Entrega física de activos valorados en hasta $5.000.000 COP.',
+        'Entrega física de activos para fortalecer la experiencia.',
         'Inclusión en el Portafolio Digital de la Red.',
         'Invitación a rueda comercial nacional.'
       ],
@@ -461,7 +461,7 @@ export const ABCConvocatoria: React.FC = () => {
         {/* Rubros de Presupuesto */}
         <div style={{ backgroundColor: '#FFFFFF', borderRadius: '16px', border: '1px solid var(--color-border)', padding: '30px', boxShadow: 'var(--shadow-md)' }}>
           <h4 style={{ fontFamily: "'Playfair Display', serif", fontSize: '22px', color: 'var(--color-ink)', fontWeight: 900, marginBottom: '20px' }}>
-            Activos Financiables (Hasta $5M COP)
+            Activos Financiables
           </h4>
           
           <div style={{ marginBottom: '25px' }}>
