@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ABCConvocatoria } from './components/ABCConvocatoria';
 import { MapaSocioPatrimonio } from './components/MapaSocioPatrimonio';
 import { GlosarioTDR } from './components/GlosarioTDR';
@@ -10,11 +10,34 @@ import {
   ExternalLinkIcon
 } from './components/SVGIcons';
 
+type TabType = 'presentacion' | 'abc' | 'glosario' | 'inscripcion';
+
 function App() {
-  const [activeTab, setActiveTab] = useState<'presentacion' | 'abc' | 'glosario' | 'inscripcion'>('presentacion');
+  const getTabFromHash = (): TabType => {
+    const hash = window.location.hash.replace('#', '');
+    if (['presentacion', 'abc', 'glosario', 'inscripcion'].includes(hash)) {
+      return hash as TabType;
+    }
+    return 'presentacion';
+  };
+
+  const [activeTab, setActiveTab] = useState<TabType>(getTabFromHash());
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navigateTo = (tab: typeof activeTab) => {
+  useEffect(() => {
+    const handleHashChange = () => {
+      setActiveTab(getTabFromHash());
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const navigateTo = (tab: TabType) => {
+    if (tab === 'presentacion') {
+      window.history.pushState('', document.title, window.location.pathname + window.location.search);
+    } else {
+      window.location.hash = tab;
+    }
     setActiveTab(tab);
     setMobileMenuOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
