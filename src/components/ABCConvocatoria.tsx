@@ -104,7 +104,7 @@ export const ABCConvocatoria: React.FC = () => {
             <a href={`${import.meta.env.BASE_URL}infografias/fases.png`} download="Infografia_Fases_RTPP.png" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', backgroundColor: 'var(--color-ocean)', color: '#FFFFFF', padding: '10px 20px', borderRadius: '12px', fontSize: '14px', fontWeight: 700, textDecoration: 'none', boxShadow: '0 4px 6px rgba(14, 165, 233, 0.2)' }}>
               ↓ Descargar Fases
             </a>
-            <a href={`${import.meta.env.BASE_URL}infografias/abc.png`} download="Infografia_ABC_RTPP.png" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', backgroundColor: 'var(--color-terracotta)', color: '#FFFFFF', padding: '10px 20px', borderRadius: '12px', fontSize: '14px', fontWeight: 700, textDecoration: 'none', boxShadow: '0 4px 6px rgba(234, 88, 12, 0.2)' }}>
+            <a href={`${import.meta.env.BASE_URL}infografias/abc.pdf`} download="Infografia_ABC_RTPP.pdf" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', backgroundColor: 'var(--color-terracotta)', color: '#FFFFFF', padding: '10px 20px', borderRadius: '12px', fontSize: '14px', fontWeight: 700, textDecoration: 'none', boxShadow: '0 4px 6px rgba(234, 88, 12, 0.2)' }}>
               ↓ Descargar ABC
             </a>
           </div>
