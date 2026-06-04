@@ -245,7 +245,7 @@ function App() {
                         <span className="download-meta">Versión Oficial</span>
                       </div>
                     </div>
-                    <a href="https://docs.google.com/document/d/18RkQ1uCHPEPgsAYUkJQk6f4KE4Kg14Y9/edit?usp=sharing&ouid=109748186578696980793&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="download-btn">Descargar</a>
+                    <a href={`${import.meta.env.BASE_URL}documentos/TDR_Terminos_de_Referencia_FNTCE_730_2025_RTPP_VF.pdf`} target="_blank" rel="noopener noreferrer" className="download-btn">Leer PDF</a>
                   </div>
                   <div className="download-row">
                     <div className="download-info">
