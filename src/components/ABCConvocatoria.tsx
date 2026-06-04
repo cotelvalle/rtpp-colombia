@@ -101,10 +101,10 @@ export const ABCConvocatoria: React.FC = () => {
             Conoce de principio a fin las etapas por las que pasará tu propuesta. Sigue este sendero para entender los requisitos, evaluaciones y la esperada dotación final.
           </p>
           <div style={{ display: 'flex', gap: '12px', marginTop: '24px', flexWrap: 'wrap' }}>
-            <a href={`${import.meta.env.BASE_URL}infografias/fases.png`} download="Infografia_Fases_RTPP.png" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', backgroundColor: 'var(--color-ocean)', color: '#FFFFFF', padding: '10px 20px', borderRadius: '12px', fontSize: '14px', fontWeight: 700, textDecoration: 'none', boxShadow: '0 4px 6px rgba(14, 165, 233, 0.2)' }}>
+            <a href={`${import.meta.env.BASE_URL}infografias/FASES-730-COTELCO.pdf`} download="FASES-730-COTELCO.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', backgroundColor: 'var(--color-ocean)', color: '#FFFFFF', padding: '10px 20px', borderRadius: '12px', fontSize: '14px', fontWeight: 700, textDecoration: 'none', boxShadow: '0 4px 6px rgba(14, 165, 233, 0.2)' }}>
               ↓ Descargar Fases
             </a>
-            <a href={`${import.meta.env.BASE_URL}infografias/abc.pdf`} download="Infografia_ABC_RTPP.pdf" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', backgroundColor: 'var(--color-terracotta)', color: '#FFFFFF', padding: '10px 20px', borderRadius: '12px', fontSize: '14px', fontWeight: 700, textDecoration: 'none', boxShadow: '0 4px 6px rgba(234, 88, 12, 0.2)' }}>
+            <a href={`${import.meta.env.BASE_URL}infografias/ABC-730-COTELCO.pdf`} download="ABC-730-COTELCO.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', backgroundColor: 'var(--color-terracotta)', color: '#FFFFFF', padding: '10px 20px', borderRadius: '12px', fontSize: '14px', fontWeight: 700, textDecoration: 'none', boxShadow: '0 4px 6px rgba(234, 88, 12, 0.2)' }}>
               ↓ Descargar ABC
             </a>
           </div>
