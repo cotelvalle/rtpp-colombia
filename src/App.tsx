@@ -272,7 +272,7 @@ function App() {
                         <span className="download-meta">Versión Oficial</span>
                       </div>
                     </div>
-                    <a href={`${import.meta.env.BASE_URL}documentos/TDR_Terminos_de_Referencia_FNTCE_730_2025_RTPP_VF.pdf`} target="_blank" rel="noopener noreferrer" className="download-btn">Leer PDF</a>
+                    <a href={`${import.meta.env.BASE_URL}documentos/TDR-FNTCE-730-2025-RTPP-VF.pdf`} target="_blank" rel="noopener noreferrer" className="download-btn">Leer PDF</a>
                   </div>
                   <div className="download-row">
                     <div className="download-info">
