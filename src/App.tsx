@@ -176,7 +176,7 @@ function App() {
                   Proceso de selección
                 </span>
                 <p style={{ margin: 0, fontSize: '14px', color: 'var(--color-ink)', lineHeight: '1.6' }}>
-                  El proceso recibirá todas las postulaciones sin límite inicial. Tras un filtro documental y técnico, se preseleccionarán hasta <strong>diez (10) experiencias</strong> por municipio, de las cuales <strong>cinco (5) quedarán preclasificadas</strong> para recibir una visita técnica en campo por parte del equipo de COTELCO Valle del Cauca. Tras las visitas, se elegirán las <strong>tres (3) experiencias beneficiarias definitivas</strong> por municipio para recibir dotación, conforme a los Términos de Referencia. <br/><br/><strong>Para conocer el detalle exacto del proceso, por favor revisa la sección del ABC de la Convocatoria.</strong>
+                  El proceso recibirá todas las postulaciones sin límite inicial. Tras un filtro documental y técnico, <strong>cinco (5) experiencias quedarán preclasificadas</strong> por municipio para recibir una visita técnica en campo por parte del equipo de COTELCO Valle del Cauca. Tras las visitas, se elegirán las <strong>tres (3) experiencias beneficiarias definitivas</strong> por municipio para recibir dotación, conforme a los Términos de Referencia. <br/><br/><strong>Para conocer el detalle exacto del proceso, por favor revisa la sección del ABC de la Convocatoria.</strong>
                 </p>
               </div>
             </div>
@@ -207,6 +207,33 @@ function App() {
                 <p style={{ color: 'var(--color-ink-light)', margin: 0, fontSize: '14px', lineHeight: '1.6' }}>
                   Es <strong>responsabilidad exclusiva y obligatoria</strong> de cada postulante descargar, leer y comprender en su totalidad los Términos de Referencia (TDR) y los anexos oficiales antes de realizar su inscripción. La postulación implica la aceptación de todas las reglas y condiciones descritas en los documentos formales de la convocatoria.
                 </p>
+              </div>
+            </div>
+
+            {/* ═══ TUTORIAL DE INSCRIPCIÓN ═══ */}
+            <div className="tutorial-section" style={{ marginBottom: '30px', backgroundColor: 'var(--color-surface)', borderRadius: '12px', border: '1px solid var(--color-border)', overflow: 'hidden', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}>
+              <div style={{ padding: '24px', borderBottom: '1px solid var(--color-border)', backgroundColor: 'var(--color-forest-light)' }}>
+                <h3 style={{ margin: 0, color: 'var(--color-forest)', fontFamily: "'Playfair Display', serif", fontSize: '22px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  📺 Tutorial: ¿Cómo realizar tu postulación?
+                </h3>
+                <p style={{ margin: '8px 0 0 0', color: 'var(--color-ink)', fontSize: '14.5px', lineHeight: '1.6' }}>
+                  Antes de descargar los formatos o llenar el formulario, te recomendamos ver este breve video paso a paso donde explicamos cómo completar tu inscripción exitosamente.
+                </p>
+              </div>
+              <div style={{ padding: '32px 24px', display: 'flex', justifyContent: 'center', backgroundColor: 'var(--color-surface)' }}>
+                <div style={{ width: '100%', maxWidth: '800px', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(0,0,0,0.08)', position: 'relative', boxShadow: '0 20px 40px -15px rgba(0, 0, 0, 0.15)' }}>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/u1L93XPkDns"
+                    srcDoc={`<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%;background:transparent}img{position:absolute;width:100%;height:100%;object-fit:cover;top:0;left:0}.play-btn{width:72px;height:52px;background-color:rgba(33,33,33,0.85);border-radius:14px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;transition:all 0.2s ease;backdrop-filter:blur(4px);}.play-btn::before{content:"";border-style:solid;border-width:12px 0 12px 22px;border-color:transparent transparent transparent #fff;margin-left:6px;}a:hover .play-btn{background-color:#ff0000;transform:translate(-50%,-50%) scale(1.05);}</style><a href="https://www.youtube.com/embed/u1L93XPkDns?autoplay=1"><img src="${import.meta.env.BASE_URL}tutorial-cover.webp" alt="Tutorial Video"><div class="play-btn"></div></a>`}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Tutorial RTPP"
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                  ></iframe>
+                </div>
               </div>
             </div>
 
