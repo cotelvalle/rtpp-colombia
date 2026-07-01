@@ -282,7 +282,26 @@ function App() {
                         <span className="download-meta">Formato Obligatorio</span>
                       </div>
                     </div>
-                    <a href="https://docs.google.com/document/d/1v5EQGx34A4RQxH_X0_H9CIWpyyfRyTdynN_YnX5jwjM/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="download-btn">Descargar</a>
+                    <a href={`${import.meta.env.BASE_URL}documentos/CARTA_DE_COMPROMISO_POSTULANTE.docx`} download="Carta_de_Compromiso.docx" target="_blank" rel="noopener noreferrer" className="download-btn">Descargar</a>
+                  </div>
+
+                  {/* Adendas Divider */}
+                  <div style={{ padding: '20px 0 12px 0', borderTop: '1px dashed var(--color-border)', marginTop: '8px' }}>
+                    <h4 style={{ margin: '0 0 6px 0', color: 'var(--color-forest)', fontSize: '16px', fontFamily: "'Playfair Display', serif" }}>Actualizaciones y Adendas oficiales</h4>
+                    <p style={{ margin: 0, fontSize: '13.5px', color: 'var(--color-ink-light)', lineHeight: '1.5' }}>
+                      Te invitamos a leer atentamente estos documentos, ya que incluyen los últimos cambios oficiales, ajustes de fechas y aclaraciones sobre la convocatoria.
+                    </p>
+                  </div>
+
+                  <div className="download-row">
+                    <div className="download-info">
+                      <FileIcon />
+                      <div className="download-title-container">
+                        <span className="download-title">Adenda 1 - Cronograma Convocatoria</span>
+                        <span className="download-meta">Actualización de fechas</span>
+                      </div>
+                    </div>
+                    <a href={`${import.meta.env.BASE_URL}documentos/ADENDA_1_CRONOGRAMA_CONVOCATORIA.pdf`} target="_blank" rel="noopener noreferrer" className="download-btn">Leer PDF</a>
                   </div>
                 </div>
               </div>

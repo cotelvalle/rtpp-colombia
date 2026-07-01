@@ -23,7 +23,7 @@ export const ABCConvocatoria: React.FC = () => {
         'Las propuestas que cumplan los requisitos avanzarán a la etapa de priorización técnica.'
       ],
       isCurrent: true,
-      date: 'Apertura: 9 de Junio de 2026'
+      date: 'Abierta hasta: 6 de Julio de 2026'
     },
     {
       id: 'fase2',
@@ -136,8 +136,8 @@ export const ABCConvocatoria: React.FC = () => {
           {/* Hito 1: Apertura (Fase Actual/Prendida) */}
           <div style={{ position: 'relative', zIndex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, textAlign: 'center' }}>
             <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'var(--color-ocean)', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '20px', border: '4px solid #FFFFFF', boxShadow: '0 0 15px rgba(14, 165, 233, 0.4)', marginBottom: '12px' }}>1</div>
-            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '13px', fontWeight: 800, color: 'var(--color-ink)' }}>Lanzamiento</span>
-            <span style={{ fontSize: '12px', color: 'var(--color-ocean)', fontWeight: 700, marginTop: '4px' }}>Próximamente (9 Jun)</span>
+            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '13px', fontWeight: 800, color: 'var(--color-ink)' }}>Postulaciones</span>
+            <span style={{ fontSize: '12px', color: 'var(--color-ocean)', fontWeight: 700, marginTop: '4px' }}>Abierta (Hasta 6 Jul)</span>
           </div>
 
           {/* Hito 2: Evaluación (Inactiva/Gris) */}
