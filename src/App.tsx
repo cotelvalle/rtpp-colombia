@@ -303,6 +303,17 @@ function App() {
                     </div>
                     <a href={`${import.meta.env.BASE_URL}documentos/ADENDA_1_CRONOGRAMA_CONVOCATORIA.pdf`} target="_blank" rel="noopener noreferrer" className="download-btn">Leer PDF</a>
                   </div>
+                  
+                  <div className="download-row">
+                    <div className="download-info">
+                      <FileIcon />
+                      <div className="download-title-container">
+                        <span className="download-title">Adenda 2 - Cronograma Convocatoria</span>
+                        <span className="download-meta">Actualización de fechas</span>
+                      </div>
+                    </div>
+                    <a href={`${import.meta.env.BASE_URL}documentos/ADENDA_2.pdf`} target="_blank" rel="noopener noreferrer" className="download-btn">Leer PDF</a>
+                  </div>
                 </div>
               </div>
             </div>
