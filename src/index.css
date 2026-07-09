@@ -1178,6 +1178,7 @@ h1, h2, h3, h4, .font-display {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  align-items: start;
 }
 
 .action-card {
