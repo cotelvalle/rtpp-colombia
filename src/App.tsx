@@ -10,12 +10,12 @@ import {
   ExternalLinkIcon
 } from './components/SVGIcons';
 
-type TabType = 'presentacion' | 'abc' | 'glosario' | 'inscripcion';
+type TabType = 'presentacion' | 'abc' | 'glosario' | 'inscripcion' | 'resultados';
 
 function App() {
   const getTabFromHash = (): TabType => {
     const hash = window.location.hash.replace('#', '');
-    if (['presentacion', 'abc', 'glosario', 'inscripcion'].includes(hash)) {
+    if (['presentacion', 'abc', 'glosario', 'inscripcion', 'resultados'].includes(hash)) {
       return hash as TabType;
     }
     return 'presentacion';
@@ -40,7 +40,11 @@ function App() {
     }
     setActiveTab(tab);
     setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Esperamos un momento para que React renderice el DOM de la nueva pestaña
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
   };
 
   return (
@@ -76,8 +80,11 @@ function App() {
             <button className={`tab-btn ${activeTab === 'glosario' ? 'active' : ''}`} onClick={() => navigateTo('glosario')}>
               Glosario
             </button>
-            <button className={`tab-btn CTA ${activeTab === 'inscripcion' ? 'active' : ''}`} onClick={() => navigateTo('inscripcion')} style={{ backgroundColor: 'var(--color-forest)', color: 'white', borderRadius: '8px' }}>
+            <button className={`tab-btn ${activeTab === 'inscripcion' ? 'active' : ''}`} onClick={() => navigateTo('inscripcion')}>
               Inscripción
+            </button>
+            <button className={`tab-btn CTA ${activeTab === 'resultados' ? 'active' : ''}`} onClick={() => navigateTo('resultados')} style={{ backgroundColor: 'var(--color-forest)', color: 'white', borderRadius: '8px' }}>
+              Resultados
             </button>
           </div>
         </div>
@@ -101,7 +108,7 @@ function App() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '4px' }}>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', backgroundColor: 'var(--color-forest-light)', color: 'var(--color-forest)', padding: '6px 14px', borderRadius: '6px', fontSize: '13px', fontWeight: 700, border: '1px solid rgba(45, 74, 62, 0.15)' }}>
                     <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: 'var(--color-mustard)', display: 'inline-block' }}></span>
-                    Etapa de Preinscripción Abierta
+                    Fase 2: Priorización Técnica
                   </span>
                 </div>
                 <div style={{ display: 'flex', gap: '14px', marginTop: '12px' }}>
@@ -110,6 +117,9 @@ function App() {
                   </button>
                   <button className="action-btn secondary" onClick={() => navigateTo('inscripcion')} style={{ padding: '12px 22px', fontSize: '14px' }}>
                     Postular Experiencia
+                  </button>
+                  <button className="action-btn" onClick={() => navigateTo('resultados')} style={{ padding: '12px 22px', fontSize: '14px', backgroundColor: 'var(--color-ocean)', color: 'white', border: 'none', borderRadius: '8px', fontWeight: 700 }}>
+                    Resultados
                   </button>
                 </div>
               </div>
@@ -238,74 +248,6 @@ function App() {
             </div>
 
             <div className="forms-downloads-layout">
-              {/* Nuevo Bloque de Resultados - Diseño de Impacto */}
-              <div className="action-card" style={{ 
-                gridColumn: '1 / -1', 
-                background: 'linear-gradient(135deg, var(--color-ocean) 0%, #0284c7 100%)', 
-                borderColor: 'var(--color-ocean)',
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                flexWrap: 'wrap',
-                padding: '32px',
-                gap: '24px',
-                color: 'white',
-                boxShadow: '0 12px 30px -10px rgba(14, 165, 233, 0.5)',
-                position: 'relative',
-                overflow: 'hidden',
-                borderRadius: '16px'
-              }}>
-                <div style={{ flex: '1 1 300px', position: 'relative', zIndex: 2 }}>
-                  <span style={{ 
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    backgroundColor: 'rgba(255,255,255,0.2)', 
-                    color: '#fff', 
-                    padding: '6px 14px', 
-                    borderRadius: '20px', 
-                    fontSize: '13px', 
-                    fontWeight: 800,
-                    letterSpacing: '0.5px',
-                    marginBottom: '14px',
-                    backdropFilter: 'blur(4px)',
-                    border: '1px solid rgba(255,255,255,0.3)'
-                  }}>
-                    <span style={{ fontSize: '16px' }}>📅</span> PUBLICADO: 22 DE JULIO DE 2026
-                  </span>
-                  <h3 style={{ fontSize: '24px', margin: '0 0 10px 0', color: 'white', fontFamily: "'Playfair Display', serif", fontWeight: 900, lineHeight: '1.3' }}>
-                    Publicación de resultados de la verificación de requisitos habilitantes fase de elegibilidad
-                  </h3>
-                  <p style={{ fontSize: '15px', color: 'rgba(255,255,255,0.95)', lineHeight: '1.6', margin: 0, fontWeight: 500, textAlign: 'justify' }}>
-                    La presente publicación corresponde exclusivamente a la revisión del cumplimiento de los requisitos mínimos establecidos en los TDR de la convocatoria. En consecuencia, las postulaciones declaradas como elegibles han acreditado el cumplimiento de dichos requisitos y continúan a la siguiente fase del proceso.
-                  </p>
-                </div>
-                <div style={{ flex: '0 0 auto', display: 'flex', minWidth: '220px', position: 'relative', zIndex: 2 }}>
-                  <a href={`${import.meta.env.BASE_URL}acta-elegibilidad.pdf`} target="_blank" rel="noopener noreferrer" className="action-btn download-btn" style={{ 
-                    textAlign: 'center', 
-                    display: 'flex', 
-                    justifyContent: 'center', 
-                    alignItems: 'center',
-                    gap: '10px', 
-                    backgroundColor: 'white', 
-                    color: 'var(--color-ocean)',
-                    fontWeight: 800,
-                    fontSize: '16px',
-                    padding: '16px 28px',
-                    width: '100%',
-                    boxShadow: '0 8px 16px rgba(0,0,0,0.15)',
-                    border: 'none',
-                    borderRadius: '12px'
-                  }}>
-                    Ver Documento <FileIcon />
-                  </a>
-                </div>
-                {/* Elementos decorativos de fondo */}
-                <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '150px', height: '150px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '50%', zIndex: 1 }}></div>
-                <div style={{ position: 'absolute', bottom: '-40px', right: '100px', width: '80px', height: '80px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '50%', zIndex: 1 }}></div>
-              </div>
-
               <div className="action-card">
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '20px', marginBottom: '12px', color: 'var(--color-forest)', fontFamily: "'Playfair Display', serif" }}>
@@ -382,6 +324,94 @@ function App() {
                     </div>
                     <a href={`${import.meta.env.BASE_URL}documentos/ADENDA_2.pdf`} target="_blank" rel="noopener noreferrer" className="download-btn">Leer PDF</a>
                   </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        )}
+
+        {activeTab === 'resultados' && (
+          <div className="section-container" style={{ maxWidth: '1000px', margin: '0 auto 60px auto', padding: '20px' }}>
+            <div className="hero-text-container" style={{ marginBottom: '40px', textAlign: 'center' }}>
+              <span className="hero-badge">CONVOCATORIA PÚBLICA • CONTRATO FNTCE-730-2025</span>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, color: 'var(--color-forest)', fontSize: '32px', margin: '15px 0' }}>
+                Resultados del Proceso
+              </h2>
+              <p style={{ color: 'var(--color-ink-light)', fontSize: '16px', maxWidth: '700px', margin: '0 auto' }}>
+                Aquí encontrarás las actas de publicación y notificaciones oficiales de las diferentes fases de evaluación de la convocatoria.
+              </p>
+            </div>
+            
+            <div className="forms-downloads-layout">
+              <div className="action-card" style={{ 
+                gridColumn: '1 / -1', 
+                backgroundColor: 'var(--color-surface)', 
+                border: '1px solid var(--color-border)',
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                padding: '36px',
+                gap: '24px',
+                boxShadow: 'var(--shadow-md)',
+                borderRadius: '16px'
+              }}>
+                <div style={{ flex: '1 1 300px' }}>
+                  <span style={{ 
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    backgroundColor: 'var(--color-forest-light)', 
+                    color: 'var(--color-forest)', 
+                    padding: '6px 14px', 
+                    borderRadius: '20px', 
+                    fontSize: '13px', 
+                    fontWeight: 800,
+                    letterSpacing: '0.5px',
+                    marginBottom: '16px',
+                    border: '1px solid rgba(45, 74, 62, 0.15)'
+                  }}>
+                    PUBLICADO: 22 DE JULIO DE 2026
+                  </span>
+                  <h3 style={{ fontSize: '24px', margin: '0 0 16px 0', color: 'var(--color-forest)', fontFamily: "'Playfair Display', serif", fontWeight: 900, lineHeight: '1.3' }}>
+                    Publicación de resultados de la verificación de requisitos habilitantes fase de elegibilidad
+                  </h3>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                    <p style={{ fontSize: '15px', color: 'var(--color-ink-light)', lineHeight: '1.6', margin: 0, textAlign: 'justify' }}>
+                      En el marco de la Convocatoria para la Identificación, Caracterización, Validación y Priorización de Experiencias Turísticas Culturales para el fortalecimiento de la competitividad, sostenibilidad y promoción de la Red Turística de Pueblos Patrimonio de Colombia – Contrato FNTCE-730-2025, se publica el resultado de la fase de verificación de requisitos habilitantes de las postulaciones recibidas.
+                    </p>
+                    <p style={{ fontSize: '15px', color: 'var(--color-ink-light)', lineHeight: '1.6', margin: 0, textAlign: 'justify' }}>
+                      La presente publicación corresponde exclusivamente a la revisión del cumplimiento de los requisitos mínimos establecidos en los términos de referencia de la convocatoria. En consecuencia, las postulaciones declaradas como elegibles han acreditado el cumplimiento de dichos requisitos y continúan a las siguientes etapas del proceso.
+                    </p>
+                    <p style={{ fontSize: '15px', color: 'var(--color-ink-light)', lineHeight: '1.6', margin: 0, textAlign: 'justify' }}>
+                      Es importante precisar que la condición de elegible no implica la selección definitiva de las experiencias ni otorga la calidad de seleccionado del proyecto. La selección final de las experiencias que harán parte del proceso de fortalecimiento será determinada en las etapas posteriores de evaluación, validación y priorización, conforme a lo establecido en los términos de referencia de la convocatoria.
+                    </p>
+                    <p style={{ fontSize: '15px', color: 'var(--color-ink-light)', lineHeight: '1.6', margin: 0, textAlign: 'justify' }}>
+                      Los resultados y comunicaciones relacionadas con las siguientes fases del proceso serán informados a través de los canales oficiales dispuestos para la convocatoria.
+                    </p>
+                  </div>
+                </div>
+                <div style={{ flex: '0 0 auto', display: 'flex', minWidth: '220px' }}>
+                  <a href={`${import.meta.env.BASE_URL}acta-elegibilidad.pdf`} target="_blank" rel="noopener noreferrer" className="action-btn download-btn" style={{ 
+                    textAlign: 'center', 
+                    display: 'flex', 
+                    justifyContent: 'center', 
+                    alignItems: 'center',
+                    gap: '10px', 
+                    backgroundColor: 'var(--color-ocean)', 
+                    color: 'white',
+                    fontWeight: 800,
+                    fontSize: '16px',
+                    padding: '16px 28px',
+                    width: '100%',
+                    boxShadow: '0 8px 16px rgba(14, 165, 233, 0.25)',
+                    border: 'none',
+                    borderRadius: '12px'
+                  }}>
+                    Ver Documento <FileIcon />
+                  </a>
                 </div>
               </div>
             </div>
