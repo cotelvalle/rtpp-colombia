@@ -103,7 +103,7 @@ function App() {
                   Fortalece tu experiencia turística cultural
                 </h1>
                 <p style={{ fontSize: '15.5px', color: 'var(--color-ink-light)', lineHeight: '1.65' }}>
-                  Cofinanciación en activos productivos, acompañamiento técnico y fortalecimiento de capacidades para experiencias turísticas de los 18 municipios de la Red de Pueblos Patrimonio.
+                  Más visibilidad, más oportunidades y más competitividad para las experiencias turísticas culturales de la Red Turística de Pueblos Patrimonio de Colombia.
                 </p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '4px' }}>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', backgroundColor: 'var(--color-forest-light)', color: 'var(--color-forest)', padding: '6px 14px', borderRadius: '6px', fontSize: '13px', fontWeight: 700, border: '1px solid rgba(45, 74, 62, 0.15)' }}>
