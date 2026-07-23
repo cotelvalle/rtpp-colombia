@@ -147,7 +147,7 @@ function App() {
                   El programa <strong>Red Turística de Pueblos Patrimonio (RTPP)</strong> es una apuesta clave para el turismo cultural en Colombia, destacando el inmenso valor histórico y arquitectónico de 18 municipios únicos. Teniendo en cuenta la importancia que ha tenido el programa para el desarrollo turístico del país, se considera necesario dar continuidad a la Red a partir de tres pilares estratégicos de fortalecimiento: <strong>articulación, competitividad y sostenibilidad</strong>. El trabajo articulado como red colaborativa, con principios de participación y corresponsabilidad de las partes interesadas, permitirá seguir fortaleciendo esta importante Red.
                 </p>
                 <p style={{ fontSize: '15px', color: 'var(--color-ink)', lineHeight: '1.75', textAlign: 'justify' }}>
-                  Por lo anterior, el presente proyecto <strong>FNTCE-730-2025</strong> vincula y materializa las siguientes actividades, que esperan ser desarrolladas con las experiencias beneficiarias:
+                  Por lo anterior, el presente proyecto <strong>FNTCE-730-2025</strong> vincula y materializa las siguientes actividades, que esperan ser desarrolladas con las experiencias seleccionadas:
                 </p>
                 <ul style={{ fontSize: '15px', color: 'var(--color-ink)', lineHeight: '1.6', paddingLeft: '25px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   <li>Diseñar un portafolio de servicios, actividades y experiencias turísticas de los municipios que integran la Red Turística de Pueblos Patrimonio.</li>
@@ -176,7 +176,7 @@ function App() {
                   Proceso de selección
                 </span>
                 <p style={{ margin: 0, fontSize: '14px', color: 'var(--color-ink)', lineHeight: '1.6' }}>
-                  El proceso recibirá todas las postulaciones sin límite inicial. Tras un filtro documental y técnico, <strong>cinco (5) experiencias quedarán preclasificadas</strong> por municipio para recibir una visita técnica en campo por parte del equipo de COTELCO Valle del Cauca. Tras las visitas, se elegirán las <strong>tres (3) experiencias beneficiarias definitivas</strong> por municipio para recibir dotación, conforme a los Términos de Referencia. <br/><br/><strong>Para conocer el detalle exacto del proceso, por favor revisa la sección del ABC de la Convocatoria.</strong>
+                  El proceso recibirá todas las postulaciones sin límite inicial. Tras un filtro documental y técnico, <strong>cinco (5) experiencias quedarán preclasificadas</strong> por municipio para recibir una visita técnica en campo por parte del equipo de COTELCO Valle del Cauca. Tras las visitas, se elegirán las <strong>tres (3) experiencias seleccionadas definitivas</strong> por municipio para recibir dotación, conforme a los Términos de Referencia. <br/><br/><strong>Para conocer el detalle exacto del proceso, por favor revisa la sección del ABC de la Convocatoria.</strong>
                 </p>
               </div>
             </div>
@@ -238,18 +238,86 @@ function App() {
             </div>
 
             <div className="forms-downloads-layout">
+              {/* Nuevo Bloque de Resultados - Diseño de Impacto */}
+              <div className="action-card" style={{ 
+                gridColumn: '1 / -1', 
+                background: 'linear-gradient(135deg, var(--color-ocean) 0%, #0284c7 100%)', 
+                borderColor: 'var(--color-ocean)',
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                padding: '32px',
+                gap: '24px',
+                color: 'white',
+                boxShadow: '0 12px 30px -10px rgba(14, 165, 233, 0.5)',
+                position: 'relative',
+                overflow: 'hidden',
+                borderRadius: '16px'
+              }}>
+                <div style={{ flex: '1 1 300px', position: 'relative', zIndex: 2 }}>
+                  <span style={{ 
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    backgroundColor: 'rgba(255,255,255,0.2)', 
+                    color: '#fff', 
+                    padding: '6px 14px', 
+                    borderRadius: '20px', 
+                    fontSize: '13px', 
+                    fontWeight: 800,
+                    letterSpacing: '0.5px',
+                    marginBottom: '14px',
+                    backdropFilter: 'blur(4px)',
+                    border: '1px solid rgba(255,255,255,0.3)'
+                  }}>
+                    <span style={{ fontSize: '16px' }}>📅</span> PUBLICADO: 22 DE JULIO DE 2026
+                  </span>
+                  <h3 style={{ fontSize: '24px', margin: '0 0 10px 0', color: 'white', fontFamily: "'Playfair Display', serif", fontWeight: 900, lineHeight: '1.3' }}>
+                    Publicación de resultados de la verificación de requisitos habilitantes fase de elegibilidad
+                  </h3>
+                  <p style={{ fontSize: '15px', color: 'rgba(255,255,255,0.95)', lineHeight: '1.6', margin: 0, fontWeight: 500, textAlign: 'justify' }}>
+                    La presente publicación corresponde exclusivamente a la revisión del cumplimiento de los requisitos mínimos establecidos en los TDR de la convocatoria. En consecuencia, las postulaciones declaradas como elegibles han acreditado el cumplimiento de dichos requisitos y continúan a la siguiente fase del proceso.
+                  </p>
+                </div>
+                <div style={{ flex: '0 0 auto', display: 'flex', minWidth: '220px', position: 'relative', zIndex: 2 }}>
+                  <a href={`${import.meta.env.BASE_URL}acta-elegibilidad.pdf`} target="_blank" rel="noopener noreferrer" className="action-btn download-btn" style={{ 
+                    textAlign: 'center', 
+                    display: 'flex', 
+                    justifyContent: 'center', 
+                    alignItems: 'center',
+                    gap: '10px', 
+                    backgroundColor: 'white', 
+                    color: 'var(--color-ocean)',
+                    fontWeight: 800,
+                    fontSize: '16px',
+                    padding: '16px 28px',
+                    width: '100%',
+                    boxShadow: '0 8px 16px rgba(0,0,0,0.15)',
+                    border: 'none',
+                    borderRadius: '12px'
+                  }}>
+                    Ver Documento <FileIcon />
+                  </a>
+                </div>
+                {/* Elementos decorativos de fondo */}
+                <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '150px', height: '150px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '50%', zIndex: 1 }}></div>
+                <div style={{ position: 'absolute', bottom: '-40px', right: '100px', width: '80px', height: '80px', backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '50%', zIndex: 1 }}></div>
+              </div>
+
               <div className="action-card">
                 <div>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '20px', marginBottom: '12px', color: 'var(--color-forest)', fontFamily: "'Playfair Display', serif" }}>
                     <ExternalLinkIcon /> 1. Cuestionario Obligatorio
                   </h3>
                   <p style={{ fontSize: '14px', color: 'var(--color-ink-light)', lineHeight: '1.6' }}>
-                    Para iniciar el proceso de selección formal, es indispensable diligenciar el formulario de registro oficial.
+                    El periodo de postulación formal ha finalizado. Agradecemos a todos los participantes.
                   </p>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%' }}>
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSet310D0MPQ1yzP3AE4lj3RLBLQwSZVUl_zXl22YZiYELRfPw/viewform" target="_blank" rel="noopener noreferrer" className="action-btn" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '8px' }}>
-                    Formulario Único de Inscripción <ExternalLinkIcon size={16} />
+                  <a href="#" className="action-btn" style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '8px', opacity: 0.7, cursor: 'not-allowed', backgroundColor: '#9ca3af' }} onClick={(e) => e.preventDefault()}>
+                    Convocatoria Cerrada
                   </a>
                 </div>
               </div>

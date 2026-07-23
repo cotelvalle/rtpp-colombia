@@ -22,8 +22,8 @@ export const ABCConvocatoria: React.FC = () => {
         'Plazo de subsanación único de tres (3) días hábiles.',
         'Las propuestas que cumplan los requisitos avanzarán a la etapa de priorización técnica.'
       ],
-      isCurrent: true,
-      date: 'Abierta hasta: 12 de Julio de 2026'
+      isCurrent: false,
+      date: 'Cerrada (12 de Julio de 2026)'
     },
     {
       id: 'fase2',
@@ -38,7 +38,8 @@ export const ABCConvocatoria: React.FC = () => {
         'Es una etapa de filtro técnico, no la asignación final.'
       ],
       notice: 'Nos comunicaremos directamente con aquellas experiencias de turismo cultural que hayan sido preclasificadas, y se les irá informando oportunamente los plazos y tiempos exactos de los siguientes procesos.',
-      date: 'Por definir (Próximamente)'
+      isCurrent: true,
+      date: 'En Proceso'
     },
     {
       id: 'fase3',
@@ -131,20 +132,20 @@ export const ABCConvocatoria: React.FC = () => {
           <div style={{ position: 'absolute', top: '22px', left: '10%', right: '10%', height: '4px', backgroundColor: '#E2E8F0', zIndex: 1, borderRadius: '4px' }}></div>
           
           {/* Línea conectora de progreso (ilumina hasta la fase actual) */}
-          <div style={{ position: 'absolute', top: '22px', left: '10%', width: '0%', height: '4px', background: 'linear-gradient(90deg, var(--color-ocean), var(--color-mustard))', zIndex: 2, borderRadius: '4px' }}></div>
+          <div style={{ position: 'absolute', top: '22px', left: '10%', width: '33%', height: '4px', background: 'linear-gradient(90deg, var(--color-ocean), var(--color-mustard))', zIndex: 2, borderRadius: '4px' }}></div>
 
-          {/* Hito 1: Apertura (Fase Actual/Prendida) */}
+          {/* Hito 1: Apertura (Fase Cerrada) */}
           <div style={{ position: 'relative', zIndex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, textAlign: 'center' }}>
             <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'var(--color-ocean)', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '20px', border: '4px solid #FFFFFF', boxShadow: '0 0 15px rgba(14, 165, 233, 0.4)', marginBottom: '12px' }}>1</div>
             <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '13px', fontWeight: 800, color: 'var(--color-ink)' }}>Postulaciones</span>
-            <span style={{ fontSize: '12px', color: 'var(--color-ocean)', fontWeight: 700, marginTop: '4px' }}>Abierta (Hasta 12 Jul)</span>
+            <span style={{ fontSize: '12px', color: 'var(--color-ocean)', fontWeight: 700, marginTop: '4px' }}>Cerrada</span>
           </div>
 
-          {/* Hito 2: Evaluación (Inactiva/Gris) */}
+          {/* Hito 2: Evaluación (Activa) */}
           <div style={{ position: 'relative', zIndex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, textAlign: 'center' }}>
-            <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: '#CBD5E1', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '20px', border: '4px solid #FFFFFF', marginBottom: '12px' }}>2</div>
-            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '13px', fontWeight: 600, color: 'var(--color-ink-light)' }}>Evaluación</span>
-            <span style={{ fontSize: '12px', color: 'var(--color-ink-light)', marginTop: '4px' }}>Por definir</span>
+            <div style={{ width: '48px', height: '48px', borderRadius: '50%', backgroundColor: 'var(--color-mustard)', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', fontSize: '20px', border: '4px solid #FFFFFF', boxShadow: '0 0 15px rgba(217, 119, 6, 0.4)', marginBottom: '12px' }}>2</div>
+            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '13px', fontWeight: 800, color: 'var(--color-ink)' }}>Evaluación</span>
+            <span style={{ fontSize: '12px', color: 'var(--color-mustard)', fontWeight: 700, marginTop: '4px' }}>En Proceso</span>
           </div>
 
           {/* Hito 3: Visitas (Inactiva/Gris) */}
